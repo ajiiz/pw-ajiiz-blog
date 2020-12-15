@@ -3,6 +3,7 @@ import { Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-d
 import Home from './components/HomePage/Home'
 import Login from './components/LoginPage/Login'
 import Blog from './components/BlogPage/Blog'
+import './styles/main.scss'
 
 const App = () => {
     return (
