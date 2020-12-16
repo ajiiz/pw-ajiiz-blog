@@ -44,4 +44,17 @@
             -webkit-text-stroke-color: $color-white;
         }
     }
+    &__banners {
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        &__banner {
+            img {
+                height: 87px;
+                pointer-events: none;
+            }
+        }
+    }
 }
