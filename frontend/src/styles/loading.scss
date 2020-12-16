@@ -30,8 +30,18 @@
                 font-weight: normal;
                 padding-left: 80px;
                 padding-right: 80px;
-                padding-bottom: 100px;
             }
+        }
+        &__info {
+            font-family: $font-info;
+            margin-top: 40px;
+            opacity: 0.5;
+        }
+
+        &__header-reversed {
+            color: $color-black;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: $color-white;
         }
     }
 }
