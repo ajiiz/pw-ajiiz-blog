@@ -56,5 +56,9 @@
                 pointer-events: none;
             }
         }
+
+        &__banner-dark:nth-child(3) {
+            transform: scale(1,-1);
+        }
     }
 }
