@@ -65,3 +65,39 @@
         }
     }
 }
+
+@media (max-width: 1465px) {
+    .loading {
+        font-size: 90px;
+
+        &__text {
+            &__header {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .loading {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 700px) {
+    .loading {
+        font-size: 50px;
+
+        &__text {
+            &__header {
+                width: 95%;
+            }
+
+            &__header-reversed {
+                -webkit-text-stroke-width: 1px;
+            }
+        }
+    }
+}
