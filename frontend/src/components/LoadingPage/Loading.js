@@ -8,13 +8,8 @@ const Loading = () => {
         <div className="loading">
             <div className="loading__text">
                 <h1 className="loading__text__header">
-                    <span className="loading__text__header__numbers">
-                        1-100
-                    </span>
-                HOLD ON, YOUR WEB EXPERIENCE IS
-                    <span className="loading__text__header loading__text__header-reversed">
-                        LOADING
-                    </span>
+                    <span className="loading__text__header__numbers">1-100</span>
+                HOLD ON, YOUR WEB EXPERIENCE IS <span className="loading__text__header loading__text__header-reversed">LOADING</span>
                 </h1>
                 <p className="loading__text__info">
                     please wait a few seconds.
