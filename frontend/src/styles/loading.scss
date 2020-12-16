@@ -8,9 +8,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 115px;
 
     &__text {
-        height: 65%;
+        height: 60%;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -19,22 +20,23 @@
 
         &__header {
             width: 75%;
-            font-size: 130px;
+            font-size: 1em;
             font-family: $font-header;
             font-weight: normal;
-            line-height: 149px;
+            line-height: 1.14em;
+            padding-top: 0.4em;
 
             &__numbers {
-                font-size: 125px;
+                font-size: 0.96em;
                 font-family: $font-info;
                 font-weight: normal;
-                padding-left: 80px;
-                padding-right: 80px;
+                padding: 0 0.61em 0 0.61em;
             }
         }
         &__info {
             font-family: $font-info;
-            margin-top: 40px;
+            font-size: 0.14em;
+            margin-top: 0.3em;
             opacity: 0.5;
         }
 
@@ -45,10 +47,11 @@
         }
     }
     &__banners {
-        height: 35%;
+        height: 40%;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
+        overflow: hidden;
 
         &__banner {
             img {
@@ -58,7 +61,7 @@
         }
 
         &__banner-dark:nth-child(3) {
-            transform: scale(1,-1);
+            transform: scale(1,-1) translateY(15px);
         }
     }
 }
