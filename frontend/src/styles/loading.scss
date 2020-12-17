@@ -31,6 +31,7 @@
 
             &__main {
                 padding-right: 100px;
+                opacity: 0;
             }
 
             &__numbers {
@@ -40,6 +41,7 @@
                 padding: 0 0.61em 0 0.61em;
                 position: relative;
                 display: inline-block;
+                transform: translateY(100%);
             }
 
             &__reversed {
@@ -48,6 +50,8 @@
                 -webkit-text-stroke-color: $color-white;
                 position: relative;
                 display: inline-block;
+                transform: translateY(100%);
+                opacity: 0;
 
                 &::after {
                     border-bottom: 0.125em solid $color-white;
@@ -76,9 +80,8 @@
             margin-top: 0.3em;
             opacity: 0;
             animation: smallTextAnimation 1.5s infinite;
-            animation-delay: 2.5s;
+            animation-delay: 1s;
             position: relative;
-            display: inline-block;
         }
     }
 
@@ -88,6 +91,7 @@
         flex-direction: column;
         justify-content: center;
         overflow: hidden;
+        opacity: 0;
 
         &__banner {
             img {
