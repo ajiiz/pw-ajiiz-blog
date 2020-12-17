@@ -17,6 +17,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
 
         &__header {
             width: 75%;
@@ -26,6 +27,7 @@
             font-weight: normal;
             line-height: 1.14em;
             padding-top: 0.4em;
+            overflow: hidden;
 
             &__main {
                 padding-right: 100px;
@@ -36,6 +38,8 @@
                 font-family: $font-info;
                 font-weight: normal;
                 padding: 0 0.61em 0 0.61em;
+                position: relative;
+                display: inline-block;
             }
 
             &__reversed {
@@ -43,6 +47,7 @@
                 -webkit-text-stroke-width: 2px;
                 -webkit-text-stroke-color: $color-white;
                 position: relative;
+                display: inline-block;
 
                 &::after {
                     border-bottom: 0.125em solid $color-white;
@@ -55,6 +60,7 @@
                     opacity: 0;
                     transition: .4s ease-in-out opacity;
                     animation: opacityAnimation 1.5s infinite;
+                    animation-delay: 2.5s;
                 }
 
                 &:hover::after {
@@ -68,8 +74,11 @@
             font-family: $font-info;
             font-size: 0.14em;
             margin-top: 0.3em;
-            opacity: 0.5;
+            opacity: 0;
             animation: smallTextAnimation 1.5s infinite;
+            animation-delay: 2.5s;
+            position: relative;
+            display: inline-block;
         }
     }
 
@@ -86,6 +95,7 @@
                 margin-left: 150px;
                 pointer-events: none;
                 animation: bannerAnimation 3s infinite;
+                animation-delay: 2.5s;
             }
         }
 
