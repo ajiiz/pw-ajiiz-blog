@@ -25,7 +25,7 @@ const Loading = () => {
             <div className="loading__text">
                 <h1 className="loading__text__header">
                 HOLD ON, YOUR WEB EXPERIENCE IS
-                <span className="loading__text__header-reversed"> LOADING</span>
+                <span className="loading__text__header__reversed"> LOADING</span>
                 <span className="loading__text__header__numbers">{ count}-100</span>
                 </h1>
                 <p className="loading__text__info">
