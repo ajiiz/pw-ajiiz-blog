@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import CustomCursor from '../CustomCursor/CustomCursor'
 import Loading from '../LoadingPage/Loading'
 
 const Home = () => {
+
+    const [shouldLoad, isShouldLoad] = useState(false)
+
     return (
         <>
-        <CustomCursor />
+        <CustomCursor shouldLoad={ shouldLoad } />
         <Loading />
         <div>
             Home
