@@ -8,12 +8,13 @@ const Home = () => {
 
     const handleAnimationStart = () => {
         isShouldLoad(!shouldLoad)
+        console.log("changed")
     }
 
     return (
         <>
-        <CustomCursor handleAnimationStart={ handleAnimationStart } />
-        <Loading />
+        <CustomCursor />
+        <Loading handleAnimationStart={ handleAnimationStart }/>
         <div>
             Home
         </div>
