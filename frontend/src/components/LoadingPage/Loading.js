@@ -10,6 +10,19 @@ const Loading = ({ handleAnimationStart }) => {
     let container = useRef(null)
 
     useEffect(() => {
+
+        const main = container.children[0].firstElementChild.firstElementChild
+        const reversed = container.children[0].firstElementChild.children[1]
+        const numbers = container.children[0].firstElementChild.children[2]
+        const information = container.children[0].children[1]
+        const banners = container.children[1]
+
+        gsap.to(main,  {delay: 0.5, duration: 1.5, opacity: 1, ease: Power1.easeInOut})
+        gsap.to(banners,  {delay: 0.5, duration: 1.5, opacity: 1, stagger: 0.8, ease: Power1.easeInOut})
+        gsap.to(reversed,  {delay: 1.4, duration: 1, opacity: 1, y: "0" , ease: Power1.easeInOut})
+        gsap.to(numbers,  {delay: 1.5, duration: 1, y: "0" , ease: Power1.easeInOut})
+        gsap.to(information,  {delay: 2.2, duration: 1, opacity: 1, ease: Power1.easeInOut})
+
         setTimeout(() => {
             let i = 1
             const interval = setInterval(() => {
