@@ -10,17 +10,19 @@ const Loading = ({ handleAnimationStart }) => {
     let container = useRef(null)
 
     useEffect(() => {
-        let i = 1
-        const interval = setInterval(() => {
-            i += (Math.floor(Math.random() * 2) + 1)
-            if (i <= 100) {
-                setCount(i)
-            } else {
-                setCount(100)
-                handleAnimationStart()
-                clearInterval(interval)
-            }
-        }, 60)
+        setTimeout(() => {
+            let i = 1
+            const interval = setInterval(() => {
+                i += (Math.floor(Math.random() * 2) + 1)
+                if (i <= 100) {
+                    setCount(i)
+                } else {
+                    setCount(100)
+                    handleAnimationStart()
+                    clearInterval(interval)
+                }
+            }, 60)
+        }, 3500)
     }, [])
 
     return (
@@ -31,9 +33,9 @@ const Loading = ({ handleAnimationStart }) => {
                     <span className="loading__text__header__reversed">LOADING</span>
                     <span className="loading__text__header__numbers">{ count}-100</span>
                 </div>
-                <p className="loading__text__info">
+                <span className="loading__text__info">
                     please wait a few seconds.
-                </p>
+                </span>
             </div>
             <div className="loading__banners">
                 <div className="loading__banners__banner loading__banners__banner-dark"><img src={ BannerDark } alt="banner"></img></div>
