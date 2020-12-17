@@ -66,11 +66,6 @@
                     animation: opacityAnimation 1.5s infinite;
                     animation-delay: 2.5s;
                 }
-
-                &:hover::after {
-                    opacity: 1;
-                    animation: none;
-                }
             }
         }
 
