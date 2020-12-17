@@ -69,6 +69,7 @@
             font-size: 0.14em;
             margin-top: 0.3em;
             opacity: 0.5;
+            animation: smallText 1.5s infinite;
         }
     }
 
@@ -101,6 +102,19 @@
     }
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes smallText {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        color: $color-white;
     }
 }
 
