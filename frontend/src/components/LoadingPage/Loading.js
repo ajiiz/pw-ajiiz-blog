@@ -23,11 +23,11 @@ const Loading = () => {
     return (
         <div className="loading">
             <div className="loading__text">
-                <h1 className="loading__text__header">
-                HOLD ON, YOUR WEB EXPERIENCE IS
-                <span className="loading__text__header__reversed"> LOADING</span>
-                <span className="loading__text__header__numbers">{ count}-100</span>
-                </h1>
+                <div className="loading__text__header">
+                    <span className="loading__text__header__main">HOLD ON, YOUR WEB EXPERIENCE IS </span>
+                    <span className="loading__text__header__reversed">LOADING</span>
+                    <span className="loading__text__header__numbers">{ count}-100</span>
+                </div>
                 <p className="loading__text__info">
                     please wait a few seconds.
                 </p>
