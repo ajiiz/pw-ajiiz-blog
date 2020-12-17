@@ -6,9 +6,13 @@ const Home = () => {
 
     const [shouldLoad, isShouldLoad] = useState(false)
 
+    const handleAnimationStart = () => {
+        isShouldLoad(!shouldLoad)
+    }
+
     return (
         <>
-        <CustomCursor shouldLoad={ shouldLoad } />
+        <CustomCursor handleAnimationStart={ handleAnimationStart } />
         <Loading />
         <div>
             Home
