@@ -37,6 +37,9 @@ const Loading = ({ handleAnimationStart }) => {
                     gsap.to(loading, {delay: 1.5, duration: 0.5, y: "-100%", ease: Power1.easeInOut})
                     handleAnimationStart()
                     clearInterval(interval)
+                    setTimeout(() => {
+                        loading.remove()
+                    }, 2500)
                 }
             }, 60)
         }, 3200)
