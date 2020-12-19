@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import CustomCursor from '../CustomCursor/CustomCursor'
 import Loading from '../LoadingPage/Loading'
+import "../../styles/home.scss"
 
 const Home = () => {
 
@@ -14,7 +15,7 @@ const Home = () => {
         <>
         <CustomCursor />
         <Loading handleAnimationStart={ handleAnimationStart }/>
-        <div>
+        <div className="home">
             Home
         </div>
         </>
