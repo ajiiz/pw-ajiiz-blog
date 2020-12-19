@@ -16,6 +16,7 @@ const Loading = ({ handleAnimationStart }) => {
         const numbers = container.children[0].firstElementChild.children[2]
         const information = container.children[0].children[1]
         const banners = container.children[1]
+        const loading = container.children
 
         gsap.to(main,  {delay: 0.5, duration: 1.5, opacity: 1, ease: Power1.easeInOut})
         gsap.to(banners,  {delay: 0.5, duration: 1.5, opacity: 1, stagger: 0.8, ease: Power1.easeInOut})
@@ -31,11 +32,12 @@ const Loading = ({ handleAnimationStart }) => {
                     setCount(i)
                 } else {
                     setCount(100)
+                    gsap.to(loading, {duration: 1.5, opacity: 0, ease: Power1.easeInOut})
                     handleAnimationStart()
                     clearInterval(interval)
                 }
             }, 60)
-        }, 3500)
+        }, 3200)
     }, [])
 
     return (
