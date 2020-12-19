@@ -16,7 +16,8 @@ const Loading = ({ handleAnimationStart }) => {
         const numbers = container.children[0].firstElementChild.children[2]
         const information = container.children[0].children[1]
         const banners = container.children[1]
-        const loading = container.children
+        const loadingItems = container.children
+        const loading = container
 
         gsap.to(main,  {delay: 0.5, duration: 1.5, opacity: 1, ease: Power1.easeInOut})
         gsap.to(banners,  {delay: 0.5, duration: 1.5, opacity: 1, stagger: 0.8, ease: Power1.easeInOut})
@@ -27,12 +28,13 @@ const Loading = ({ handleAnimationStart }) => {
         setTimeout(() => {
             let i = 1
             const interval = setInterval(() => {
-                i += (Math.floor(Math.random() * 2) + 1)
+                i += (Math.floor(Math.random() * 3) + 1)
                 if (i <= 100) {
                     setCount(i)
                 } else {
                     setCount(100)
-                    gsap.to(loading, {duration: 1.5, opacity: 0, ease: Power1.easeInOut})
+                    gsap.to(loadingItems, {duration: 1.5, opacity: 0, ease: Power1.easeInOut})
+                    gsap.to(loading, {delay: 1.5, duration: 0.5, y: "-100%", ease: Power1.easeInOut})
                     handleAnimationStart()
                     clearInterval(interval)
                 }
