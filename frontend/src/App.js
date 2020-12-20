@@ -4,19 +4,23 @@ import Home from './components/HomePage/Home'
 import Login from './components/LoginPage/Login'
 import Blog from './components/BlogPage/Blog'
 import './styles/main.scss'
+import CustomCursor from "./components/CustomCursor/CustomCursor"
 
 const App = () => {
     return (
-        <Router>
-            <Switch>
-                <Route exact path="/">
-                    <Redirect to="/home"></Redirect>
-                </Route>
-                <Route exact path="/home" component={Home} />
-                <Route exact path="/login" component={Login} />
-                <Route exact path="/blog" component={Blog} />
-            </Switch>
-        </Router>
+        <>
+            <CustomCursor />
+            <Router>
+                <Switch>
+                    <Route exact path="/">
+                        <Redirect to="/home"></Redirect>
+                    </Route>
+                    <Route exact path="/home" component={Home} />
+                    <Route exact path="/login" component={Login} />
+                    <Route exact path="/blog" component={Blog} />
+                </Switch>
+            </Router>
+        </>
     )
 }
 
