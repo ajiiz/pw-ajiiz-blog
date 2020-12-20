@@ -1,9 +1,9 @@
-import React from 'react'
-import { Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-dom'
-import Home from './components/HomePage/Home'
-import Login from './components/LoginPage/Login'
-import Blog from './components/BlogPage/Blog'
-import './styles/main.scss'
+import React from "react"
+import { Route, BrowserRouter as Router, Switch, Redirect } from "react-router-dom"
+import Home from "./components/HomePage/Home"
+import Login from "./components/LoginPage/Login"
+import Blog from "./components/BlogPage/Blog"
+import "./styles/main.scss"
 import CustomCursor from "./components/CustomCursor/CustomCursor"
 
 const App = () => {

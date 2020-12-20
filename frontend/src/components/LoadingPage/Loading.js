@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react'
-import BannerLight from '../../assets/LoadingTextHeader-light.svg'
-import BannerDark from '../../assets/LoadingTextHeader-dark.svg'
-import { Power1, gsap } from 'gsap'
-import '../../styles/loading.scss'
+import React, { useState, useEffect, useRef } from "react"
+import BannerLight from "../../assets/LoadingTextHeader-light.svg"
+import BannerDark from "../../assets/LoadingTextHeader-dark.svg"
+import { Power1, gsap } from "gsap"
+import "../../styles/loading.scss"
 
 const Loading = ({ handleAnimationStart }) => {
 

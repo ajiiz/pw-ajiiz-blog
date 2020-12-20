@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import Loading from '../LoadingPage/Loading'
-import Navbar from '../Navbar/Navbar'
-import BannerDark from '../../assets/LoadingTextHeader-dark.svg'
+import React, { useState } from "react"
+import Loading from "../LoadingPage/Loading"
+import Navbar from "../Navbar/Navbar"
+import BannerDark from "../../assets/LoadingTextHeader-dark.svg"
 import "../../styles/home.scss"
 
 const Home = () => {
