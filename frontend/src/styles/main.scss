@@ -12,3 +12,9 @@ html, body {
     background-color: $color-black;
     color: $color-white;
 }
+
+@media (max-width: 800px) {
+    .cursor {
+        display: none;
+    }
+}
