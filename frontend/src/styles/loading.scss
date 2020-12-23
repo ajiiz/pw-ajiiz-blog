@@ -184,3 +184,17 @@
         }
     }
 }
+
+@media (max-width: 400px) {
+    .loading {
+        font-size: 40px;
+
+        &__banners {
+            &__banner {
+                img {
+                    height: 60px;
+                }
+            }
+        }
+    }
+}
