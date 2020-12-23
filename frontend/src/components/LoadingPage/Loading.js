@@ -38,7 +38,7 @@ const Loading = ({ handleAnimationStart }) => {
                     handleAnimationStart()
                     clearInterval(interval)
                     setTimeout(() => {
-                        loading.remove()
+                        gsap.to(loading, {duration: 0.5, display: "none"})
                     }, 2500)
                 }
             }, 60)
