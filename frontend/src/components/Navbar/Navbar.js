@@ -20,7 +20,7 @@ const Navbar = () => {
                     <li className="navbar__list__item">Home</li>
                 </StyledLink>
                 <StyledLink to="/blog">
-                    <li classList="navbar__list__item">Blog</li>
+                    <li className="navbar__list__item">Blog</li>
                 </StyledLink>
             </ul>
         </div>
