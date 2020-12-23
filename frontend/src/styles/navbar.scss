@@ -9,13 +9,14 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15rem 0 15rem;
+    font-size: 28px;
+    padding: 0 8em 0 8em;
 
     &__list {
         text-decoration: none;
         list-style: none;
         display: flex;
         flex-direction: row;
-        font-size: 28px;
+        font-size: 1em;
     }
 }
