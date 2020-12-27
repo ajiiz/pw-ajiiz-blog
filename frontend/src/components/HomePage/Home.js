@@ -47,7 +47,12 @@ const Home = () => {
                             <li className="home__main__side__info__text">*love swimming and travelling</li>
                         </ul>
                     </div>
-
+                    <div className="home__main__socialmedia">
+                        <img className="home__main__socialmedia__icon" src={GithubIcon} alt="github"></img>
+                        <img className="home__main__socialmedia__icon" src={InstagramIcon} alt="instagram"></img>
+                        <img className="home__main__socialmedia__icon" src={LinkedInIcon} alt="linkedin"></img>
+                        <img className="home__main__socialmedia__icon" src={FacebookIcon} alt="facebook"></img>
+                    </div>
                 </div>
                 <div className="home__banner"><img src={ BannerDark } alt="banner"></img></div>
             </div>
