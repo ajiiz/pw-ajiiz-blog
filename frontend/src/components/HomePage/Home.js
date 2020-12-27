@@ -33,8 +33,8 @@ const Home = () => {
                             <li className="home__main__content__info__text">photographer</li>
                         </ul>
                         <div className="home__main__content__contact">
-                            <button className="home__main__content__contact__btn">portfolio</button>
-                            <button className="home__main__content__contact__btn">contact</button>
+                            <button className="home__main__content__contact__btn btn">portfolio</button>
+                            <button className="home__main__content__contact__btn btn">contact</button>
                         </div>
                     </div>
                     <div className="home__main__side">
