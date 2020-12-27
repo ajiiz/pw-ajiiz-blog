@@ -33,6 +33,16 @@ const Home = () => {
                             <button className="home__main__content__contact__btn">contact</button>
                         </div>
                     </div>
+                    <div className="home__main__side">
+                        <div className="home__main__side__image">
+                            <img src={ProfileImage} alt="profile"></img>
+                        </div>
+                        <ul className="home__main__side_info">
+                            <li className="home__main__side__info__text">*caffeinated drinks lover</li>
+                            <li className="home__main__side__info__text">*programming nerd</li>
+                            <li className="home__main__side__info__text">*love swimming and travelling</li>
+                        </ul>
+                    </div>
                 </div>
                 <div className="home__banner"><img src={ BannerDark } alt="banner"></img></div>
             </div>
