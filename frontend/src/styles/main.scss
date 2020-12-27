@@ -17,6 +17,16 @@ ul {
     list-style: none;
 }
 
+.btn {
+    width: 210px;
+    border: 1px solid white;
+    background-color: rgba(36,36,36,0.5);
+    color: $color-white;
+    font-size: 40px;
+    font-family: $font-header;
+    padding: 10px 0 10px 0;
+}
+
 @media (max-width: 800px) {
     .cursor {
         display: none;
