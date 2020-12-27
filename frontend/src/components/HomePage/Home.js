@@ -18,8 +18,18 @@ const Home = () => {
             <Navbar />
             <div className="home">
                 <div className="home__banner"><img src={ BannerDark } alt="banner"></img></div>
-                <div className="home__main">
-                    Home
+                <div className="home__content">
+                    <span className="home__content__header">I design my own world</span>
+                    <ul className="home__content__info">
+                        <li className="home__content__info__text">student</li>
+                        <li className="home__content__info__text">designer</li>
+                        <li className="home__content__info__text">programmer</li>
+                        <li className="home__content__info__text">photographer</li>
+                    </ul>
+                    <div className="home__content__contact">
+                        <button className="home__content__contact__btn">portfolio</button>
+                        <button className="home__content__contact__btn">contact</button>
+                    </div>
                 </div>
                 <div className="home__banner"><img src={ BannerDark } alt="banner"></img></div>
             </div>
