@@ -3,6 +3,7 @@ import Loading from "../LoadingPage/Loading"
 import Navbar from "../Navbar/Navbar"
 import BannerDark from "../../assets/LoadingTextHeader-dark.svg"
 import "../../styles/home.scss"
+import ProfileImage from "../../assets/Profile.jpg"
 
 const Home = () => {
 
@@ -32,7 +33,6 @@ const Home = () => {
                             <button className="home__main__content__contact__btn">contact</button>
                         </div>
                     </div>
-
                 </div>
                 <div className="home__banner"><img src={ BannerDark } alt="banner"></img></div>
             </div>
