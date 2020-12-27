@@ -28,7 +28,11 @@
             align-items: center;
             justify-content: center;
 
-
+            &__header {
+                font-size: 1.74em;
+                width: 80%;
+                text-align: center;
+            }
         }
 
         &__side {
