@@ -19,12 +19,22 @@ ul {
 
 .btn {
     width: 210px;
-    border: 1px solid white;
+    border: 1px solid $color-white;
     background-color: rgba(36,36,36,0.5);
     color: $color-white;
     font-size: 40px;
     font-family: $font-header;
     padding: 10px 0 10px 0;
+    transition: background-color .4s ease-in-out, color .4s ease-in-out;
+}
+
+.btn:hover {
+    background-color: $color-white;
+    color: $color-black;
+}
+
+button, button:focus, button:active {
+    outline: none;
 }
 
 @media (max-width: 800px) {
