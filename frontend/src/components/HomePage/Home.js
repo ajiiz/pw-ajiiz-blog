@@ -4,6 +4,10 @@ import Navbar from "../Navbar/Navbar"
 import BannerDark from "../../assets/LoadingTextHeader-dark.svg"
 import "../../styles/home.scss"
 import ProfileImage from "../../assets/Profile.jpg"
+import FacebookIcon from "../../assets/FacebookIcon.svg"
+import GithubIcon from "../../assets/GithubIcon.svg"
+import InstagramIcon from "../../assets/InstagramIcon.svg"
+import LinkedInIcon from "../../assets/LinkedInIcon.svg"
 
 const Home = () => {
 
@@ -43,6 +47,7 @@ const Home = () => {
                             <li className="home__main__side__info__text">*love swimming and travelling</li>
                         </ul>
                     </div>
+
                 </div>
                 <div className="home__banner"><img src={ BannerDark } alt="banner"></img></div>
             </div>
