@@ -42,9 +42,9 @@ const Home = () => {
                             <img src={ProfileImage} alt="profile"></img>
                         </div>
                         <ul className="home__main__side_info">
-                            <li className="home__main__side__info__text">*caffeinated drinks lover</li>
-                            <li className="home__main__side__info__text">*programming nerd</li>
-                            <li className="home__main__side__info__text">*love swimming and travelling</li>
+                            <li className="home__main__side__info__text">* caffeinated drinks lover</li>
+                            <li className="home__main__side__info__text">* programming nerd</li>
+                            <li className="home__main__side__info__text">* love swimming and travelling</li>
                         </ul>
                     </div>
                     <div className="home__main__socialmedia">
