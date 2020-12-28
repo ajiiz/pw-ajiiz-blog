@@ -51,16 +51,16 @@ const Loading = ({ handleAnimationStart }) => {
                 <div className="loading__text__header">
                     <span className="loading__text__header__main">HOLD ON, YOUR WEB EXPERIENCE IS </span>
                     <span className="loading__text__header__reversed">LOADING</span>
-                    <span className="loading__text__header__numbers">{ count}-100</span>
+                    <span className="loading__text__header__numbers">{count}-100</span>
                 </div>
                 <span className="loading__text__info">
                     please wait a few seconds.
                 </span>
             </div>
             <div className="loading__banners">
-                <div className="loading__banners__banner loading__banners__banner-dark"><img src={ BannerDark } alt="banner"></img></div>
-                <div className="loading__banners__banner loading__banners__banner-light"><img src={ BannerLight } alt="banner"></img></div>
-                <div className="loading__banners__banner loading__banners__banner-dark"><img src={ BannerDark } alt="banner"></img></div>
+                <div className="loading__banners__banner loading__banners__banner-dark"><img src={BannerDark} alt="banner"></img></div>
+                <div className="loading__banners__banner loading__banners__banner-light"><img src={BannerLight} alt="banner"></img></div>
+                <div className="loading__banners__banner loading__banners__banner-dark"><img src={BannerDark} alt="banner"></img></div>
             </div>
         </div>
     )
