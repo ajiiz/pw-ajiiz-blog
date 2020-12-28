@@ -19,10 +19,10 @@ const Home = () => {
 
     return (
         <>
-            <Loading handleAnimationStart={ handleAnimationStart }/>
+            <Loading handleAnimationStart={handleAnimationStart}/>
             <Navbar />
             <div className="home">
-                <div className="home__banner"><img src={ BannerDark } alt="banner"></img></div>
+                <div className="home__banner"><img src={BannerDark} alt="banner"></img></div>
                 <div className="home__main">
                     <div className="home__main__content">
                         <span className="home__main__content__header">I design my own world</span>
@@ -54,7 +54,7 @@ const Home = () => {
                         <img className="home__main__socialmedia__icon" src={FacebookIcon} alt="facebook"></img>
                     </div>
                 </div>
-                <div className="home__banner"><img src={ BannerDark } alt="banner"></img></div>
+                <div className="home__banner"><img src={BannerDark} alt="banner"></img></div>
             </div>
         </>
     )
