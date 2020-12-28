@@ -55,9 +55,19 @@
             width: 35%;
 
             &__image {
+                border: 4px solid $color-white;
+                width: 420px;
+                height: 420px;
+                left: 50px;
+                top: 50px;
+
                 img {
-                    width: 420px;
-                    height: 420px;
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    top: 30px;
+                    left: 30px;
+                    border: 4px solid $color-white;
                 }
             }
         }
