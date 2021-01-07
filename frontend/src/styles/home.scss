@@ -155,3 +155,44 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .home {
+        height: fit-content;
+        overflow-y: scroll;
+        &__main {
+            height: unset;
+            flex-direction: column;
+            margin-top: 0;
+            &__side {
+                width: 100%;
+                margin: 15vh 0 15vh 0;
+                flex-direction: row;
+                justify-content: space-evenly;
+                &__image {
+                    width: 300px;
+                    height: 300px;
+                }
+
+                &__info {
+                    margin: 0;
+                    &__text {
+                        padding: 0.5rem 0 0.5rem 0;
+                    }
+                }
+            }
+            &__socialmedia {
+                flex-direction: row;
+                &__link {
+                    margin: 0.5rem;
+                }
+            }
+        }
+    }
+    .home::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+}
