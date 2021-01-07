@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react"
-import BannerLight from "../../assets/LoadingTextHeader-light.svg"
-import BannerDark from "../../assets/LoadingTextHeader-dark.svg"
+import BannerLight from "../../assets/banner-light.svg"
+import BannerDark from "../../assets/banner-dark.svg"
 import { Power1, gsap } from "gsap"
 import "../../styles/loading.scss"
 
