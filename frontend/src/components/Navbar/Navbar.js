@@ -15,7 +15,7 @@ padding: 0 15px 0 15px;
 const Navbar = () => {
     return (
         <div className="navbar">
-            <img className="navbar__logo" src={Logo}></img>
+            <img className="navbar__logo" src={Logo} alt="logo"></img>
             <ul className="navbar__list">
                 <StyledLink to="/home">
                     <li className="navbar__list__item">home</li>
