@@ -15,10 +15,13 @@
 
     &__main {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 86%;
-        height: 90vh;
+        width: 84%;
+        height: 87vh;
+        margin-top: 10vh;
+        padding-bottom: 5vh;
 
         &__content {
             width: 50%;
@@ -96,7 +99,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
 
             &__icon {
                 margin: 0.1em 0 0.1em 0;
@@ -113,7 +116,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        width: 7%;
+        width: 8%;
 
         img {
             height: 87px;
