@@ -132,3 +132,26 @@
     }
 
 }
+
+@media (max-width: 1500px) {
+    .home {
+        font-size: 45px;
+        &__main {
+            &__content {
+                width: unset;
+            }
+
+            &__side {
+                &__image {
+                    width: 380px;
+                    height: 380px;
+                }
+            }
+
+            &__socialmedia {
+                align-items: center;
+            }
+
+        }
+    }
+}
