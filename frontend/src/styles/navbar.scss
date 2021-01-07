@@ -27,6 +27,12 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .navbar {
+        position: unset;
+    }
+}
+
 @media (max-width: 1000px) {
     .navbar {
         padding: 0 4em 0 4em;
