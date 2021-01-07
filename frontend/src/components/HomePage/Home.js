@@ -48,10 +48,18 @@ const Home = () => {
                         </ul>
                     </div>
                     <div className="home__main__socialmedia">
-                        <img className="home__main__socialmedia__icon" src={GithubIcon} alt="github"></img>
-                        <img className="home__main__socialmedia__icon" src={InstagramIcon} alt="instagram"></img>
-                        <img className="home__main__socialmedia__icon" src={LinkedInIcon} alt="linkedin"></img>
-                        <img className="home__main__socialmedia__icon" src={FacebookIcon} alt="facebook"></img>
+                        <a className="home__main__socialmedia__link" href="https://github.com/ajiiz" target="_blank" rel="noreferrer">
+                            <img className="home__main__socialmedia__link__icon" src={GithubIcon} alt="github"></img>
+                        </a>
+                        <a className="home__main__socialmedia__link" href="https://www.instagram.com/pvvrbl/" target="_blank" rel="noreferrer">
+                            <img className="home__main__socialmedia__link__icon" src={InstagramIcon} alt="instagram"></img>
+                            </a>
+                        <a className="home__main__socialmedia__link" href="https://www.linkedin.com/in/piotr-wrobel-b514501b3/" target="_blank" rel="noreferrer">
+                            <img className="home__main__socialmedia__link__icon" src={LinkedInIcon} alt="linkedin"></img>
+                        </a>
+                        <a className="home__main__socialmedia__link" href="https://www.facebook.com/piotr.wrobel.99/" target="_blank" rel="noreferrer">
+                            <img className="home__main__socialmedia__link__icon" src={FacebookIcon} alt="facebook"></img>
+                        </a>
                     </div>
                 </div>
                 <div className="home__banner"><img src={BannerDark} alt="banner"></img></div>
