@@ -1,13 +1,13 @@
 import React, { useState } from "react"
 import Loading from "../LoadingPage/Loading"
 import Navbar from "../Navbar/Navbar"
-import BannerDark from "../../assets/LoadingTextHeader-dark.svg"
+import BannerDark from "../../assets/banner-dark.svg"
+import ProfileImage from "../../assets/home-profile.jpg"
+import FacebookIcon from "../../assets/facebook-icon.svg"
+import GithubIcon from "../../assets/github-icon.svg"
+import InstagramIcon from "../../assets/instagram-icon.svg"
+import LinkedInIcon from "../../assets/linkedin-icon.svg"
 import "../../styles/home.scss"
-import ProfileImage from "../../assets/Profile.jpg"
-import FacebookIcon from "../../assets/FacebookIcon.svg"
-import GithubIcon from "../../assets/GithubIcon.svg"
-import InstagramIcon from "../../assets/InstagramIcon.svg"
-import LinkedInIcon from "../../assets/LinkedInIcon.svg"
 
 const Home = () => {
 
