@@ -195,4 +195,17 @@
 }
 
 @media (max-width: 800px) {
+    .home {
+        &__main {
+            padding-bottom: 8vh;
+            &__side {
+                flex-direction: column;
+                margin: 5vh 0 5vh 0;
+
+                &__info {
+                    margin-top: 3rem;
+                }
+            }
+        }
+    }
 }
