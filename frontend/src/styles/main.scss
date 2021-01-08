@@ -42,3 +42,10 @@ button, button:focus, button:active {
         display: none;
     }
 }
+
+@media (max-width: 600px) {
+    .btn {
+        font-size: 30px;
+        width: 190px;
+    }
+}
