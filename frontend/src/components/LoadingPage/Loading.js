@@ -42,7 +42,7 @@ const Loading = ({ handleAnimationStart }) => {
                     }, 2500)
                 }
             }, 60)
-        }, 3200)
+        }, 2800)
     }, [])
 
     return (
