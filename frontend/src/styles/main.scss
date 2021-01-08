@@ -17,6 +17,15 @@ ul {
     list-style: none;
 }
 
+a, a:hover, a:visited {
+    color: inherit;
+    background-color: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+
 .btn {
     width: 210px;
     border: 1px solid $color-white;
