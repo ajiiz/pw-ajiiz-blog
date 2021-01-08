@@ -200,7 +200,7 @@
             padding-bottom: 8vh;
             &__side {
                 flex-direction: column;
-                margin: 5vh 0 5vh 0;
+                margin: 1.5em 0 1.5em 0;
 
                 &__info {
                     margin-top: 3rem;
@@ -234,6 +234,66 @@
                     width: 250px;
                     height: 250px;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .home {
+        font-size: 32px;
+        &__main {
+            &__side {
+                &__image {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+
+        &__banner {
+            img {
+                height: 70px;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .home {
+        font-size: 26px;
+        &__main {
+            &__content {
+                margin-bottom: 1.5em;
+                &__header {
+                    margin-top: 0.2em;
+                }
+
+                &__info {
+                    margin-bottom: 1em;
+                }
+            }
+            &__side {
+                &__image {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+
+    &__banner {
+        img {
+            height: 51px;
+        }
+    }
+}
+
+@media (max-width: 400px) and (height: 812px) {
+    .home {
+        &__banner {
+            img {
+                height: 55px;
             }
         }
     }
