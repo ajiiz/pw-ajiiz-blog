@@ -49,3 +49,10 @@ button, button:focus, button:active {
         width: 190px;
     }
 }
+
+@media (max-width: 450px) {
+    .btn {
+        font-size: 25px;
+        width: 160px;
+    }
+}
