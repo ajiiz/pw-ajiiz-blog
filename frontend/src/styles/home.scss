@@ -215,7 +215,6 @@
         font-size: 38px;
         &__main {
             margin-top: 3vh;
-
             &__content {
                 &__info {
                     margin-bottom: 1em;
@@ -227,6 +226,13 @@
                     &__btn {
                         margin: 0.5em 0 0.5em 0;
                     }
+                }
+            }
+
+            &__side {
+                &__image {
+                    width: 250px;
+                    height: 250px;
                 }
             }
         }
