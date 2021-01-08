@@ -283,3 +283,13 @@
         }
     }
 }
+
+@media (max-width: 400px) and (height: 812px) {
+    .home {
+        &__banner {
+            img {
+                height: 55px;
+            }
+        }
+    }
+}
