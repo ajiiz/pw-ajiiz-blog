@@ -33,8 +33,8 @@ const Home = () => {
                             <li className="home__main__content__info__text">photographer</li>
                         </ul>
                         <div className="home__main__content__contact">
-                            <button className="home__main__content__contact__btn btn">portfolio</button>
-                            <button className="home__main__content__contact__btn btn">contact</button>
+                            <button className="home__main__content__contact__btn btn"><a href="https://github.com/ajiiz" target="_blank" rel="noreferrer">portfolio</a></button>
+                            <button className="home__main__content__contact__btn btn"><a href="mailto:piotrwrobel.ajiiz@gmail.com">contact</a></button>
                         </div>
                     </div>
                     <div className="home__main__side">
