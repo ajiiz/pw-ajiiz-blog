@@ -21,8 +21,9 @@ const Home = () => {
 
     useEffect(() => {
         if (shouldLoad) {
-            //Fade in animation
-            console.log("Loading in")
+            const main = container
+            const header = container.children[0].children[0]
+            gsap.from(header,  {delay: 2, duration: .6, opacity: 0, y: 30, stagger: { amount: 0.6 }, ease: Power1.easeInOut})
         } else {
             //Fade out animation
             console.log("Loading out")
@@ -33,9 +34,9 @@ const Home = () => {
         <>
             <Loading handleAnimationStart={handleAnimationStart}/>
             <Navbar />
-            <div className="home" ref= {el => container = el}>
+            <div className="home">
                 <div className="home__banner"><img src={BannerDark} alt="banner"></img></div>
-                <div className="home__main">
+                <div className="home__main" ref= {el => container = el}>
                     <div className="home__main__content">
                         <span className="home__main__content__header">I design my own world</span>
                         <ul className="home__main__content__info">
