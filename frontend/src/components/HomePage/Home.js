@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import Loading from "../LoadingPage/Loading"
 import Navbar from "../Navbar/Navbar"
 import BannerDark from "../../assets/banner-dark.svg"
@@ -13,6 +13,7 @@ import "../../styles/home.scss"
 const Home = () => {
 
     const [shouldLoad, setShouldLoad] = useState(false)
+    let container = useRef(null)
 
     const handleAnimationStart = () => {
         setShouldLoad(!shouldLoad)
@@ -32,7 +33,7 @@ const Home = () => {
         <>
             <Loading handleAnimationStart={handleAnimationStart}/>
             <Navbar />
-            <div className="home">
+            <div className="home" ref= {el => container = el}>
                 <div className="home__banner"><img src={BannerDark} alt="banner"></img></div>
                 <div className="home__main">
                     <div className="home__main__content">
