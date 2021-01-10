@@ -18,6 +18,15 @@ const Home = () => {
         setShouldLoad(!shouldLoad)
     }
 
+    useEffect(() => {
+        if (shouldLoad) {
+            //Fade in animation
+            console.log("Loading in")
+        } else {
+            //Fade out animation
+            console.log("Loading out")
+        }
+    }, [shouldLoad])
 
     return (
         <>
