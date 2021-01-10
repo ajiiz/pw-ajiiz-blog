@@ -21,11 +21,11 @@ const Home = () => {
 
     useEffect(() => {
         if (shouldLoad) {
-            const header = container.children[0].children[0]
-            const info = container.children[0].children[1].children
+            const mainHeader = container.children[0].children[0]
+            const mainInfo = container.children[0].children[1].children
 
-            gsap.from(header,  {delay: 2, duration: .6, opacity: 0, y: 30, stagger: { amount: 0.6 }, ease: Power1.easeInOut})
-            gsap.from(info,  {delay: 2.6, duration: .5, opacity: 0, y: 30, stagger: 0.5, ease: Power1.easeInOut})
+            gsap.from(mainHeader,  {delay: 2, duration: .6, opacity: 0, y: 30, stagger: { amount: 0.6 }, ease: Power1.easeInOut})
+            gsap.from(mainInfo,  {delay: 2.6, duration: .5, opacity: 0, y: 30, stagger: 0.5, ease: Power1.easeInOut})
 
         } else {
             //Fade out animation
