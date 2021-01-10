@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Loading from "../LoadingPage/Loading"
 import Navbar from "../Navbar/Navbar"
 import BannerDark from "../../assets/banner-dark.svg"
@@ -7,6 +7,7 @@ import FacebookIcon from "../../assets/facebook-icon.svg"
 import GithubIcon from "../../assets/github-icon.svg"
 import InstagramIcon from "../../assets/instagram-icon.svg"
 import LinkedInIcon from "../../assets/linkedin-icon.svg"
+import { Power1, gsap } from "gsap"
 import "../../styles/home.scss"
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
     const handleAnimationStart = () => {
         setShouldLoad(!shouldLoad)
     }
+
 
     return (
         <>
