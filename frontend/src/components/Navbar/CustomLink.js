@@ -11,6 +11,14 @@ padding: 0 15px 0 15px;
 `
 
 const CustomLink = ({ to, name }) => {
+
+    const history = useHistory()
+
+    const delayedLinkPush = event => {
+        event.preventDefault()
+        setTimeout(() => history.push(to), 3000)
+    }
+
     return (
         <StyledLink to={to} onClick={delayedLinkPush}>
             <li className="navbar__list__item">{name}</li>
