@@ -1,10 +1,12 @@
 import React from 'react'
+import { NavLink, useHistory } from "react-router-dom"
+import styled from "styled-components"
 
-const CustomLink = () => {
+const CustomLink = ({ to, name }) => {
     return (
-        <div>
-
-        </div>
+        <StyledLink to={to} onClick={delayedLinkPush}>
+            <li className="navbar__list__item">{name}</li>
+        </StyledLink>
     )
 }
 
