@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react"
+import React, { useEffect, useRef } from "react"
 import Loading from "../LoadingPage/Loading"
 import Navbar from "../Navbar/Navbar"
 import BannerDark from "../../assets/banner-dark.svg"
@@ -12,35 +12,36 @@ import "../../styles/home.scss"
 
 const Home = () => {
 
-    const [shouldLoad, setShouldLoad] = useState(false)
     let container = useRef(null)
-
-    const handleAnimationStart = () => {
-        setShouldLoad(!shouldLoad)
-    }
+    let contentHeader
+    let contentInfo
+    let contentContact
+    let sideInfo
 
     useEffect(() => {
+        contentHeader = container.children[0].children[0]
+        contentInfo = container.children[0].children[1].children
+        contentContact = container.children[0].children[2]
+        sideInfo = container.children[1].children[1].children
+    }, [])
 
-        const contentHeader = container.children[0].children[0]
-        const contentInfo = container.children[0].children[1].children
-        const contentContact = container.children[0].children[2]
-        const sideInfo = container.children[1].children[1].children
+    /* ANIMATION START */
+    const handleAnimationStart = () => {
+        gsap.to(contentHeader,  {delay: 2, duration: .6, opacity: 1, y: 0, stagger: { amount: 0.6 }, ease: Power1.easeInOut})
+        gsap.to(contentInfo,  {delay: 2.6, duration: .5, opacity: 1, y: 0, stagger: 0.5, ease: Power1.easeInOut})
+        gsap.to(contentContact,  {delay: 4.6, duration: .5, opacity: 1, y: 0, stagger: 0.5, ease: Power1.easeInOut})
+        gsap.to(sideInfo,  {delay: 2.6, duration: .5, opacity: 1, y: 0, stagger: 0.5, ease: Power1.easeInOut})
+    }
 
-        if (shouldLoad) {
-            gsap.from(contentHeader,  {delay: 2, duration: .6, opacity: 0, y: 30, stagger: { amount: 0.6 }, ease: Power1.easeInOut})
-            gsap.from(contentInfo,  {delay: 2.6, duration: .5, opacity: 0, y: 30, stagger: 0.5, ease: Power1.easeInOut})
-            gsap.from(contentContact,  {delay: 4.6, duration: .5, opacity: 0, y: 30, stagger: 0.5, ease: Power1.easeInOut})
-            gsap.from(sideInfo,  {delay: 2.6, duration: .5, opacity: 0, y: 30, stagger: 0.5, ease: Power1.easeInOut})
-
-        } else {
-
-        }
-    }, [shouldLoad])
+    /* ANIMATION CLOSE */
+    const handleAnimationClose = () => {
+        gsap.to(container, {delay: 0, duration: .6, opacity: 0, ease: Power1.easeInOut})
+    }
 
     return (
         <>
             <Loading handleAnimationStart={handleAnimationStart}/>
-            <Navbar />
+            <Navbar handleAnimationClose={handleAnimationClose}/>
             <div className="home">
                 <div className="home__banner"><img src={BannerDark} alt="banner"></img></div>
                 <div className="home__main" ref= {el => container = el}>
