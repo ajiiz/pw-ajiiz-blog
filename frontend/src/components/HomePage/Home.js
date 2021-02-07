@@ -35,7 +35,11 @@ const Home = () => {
 
     /* ANIMATION CLOSE */
     const handleAnimationClose = () => {
-        gsap.to(container, {delay: 0, duration: .6, opacity: 0, ease: Power1.easeInOut})
+        gsap.to(contentContact,  {duration: .5, opacity: 0, y: -30, stagger: 0.5, ease: Power1.easeInOut})
+        gsap.to(contentInfo,  {delay: .2, duration: .5, opacity: 0, y: -30, stagger: 0.5, ease: Power1.easeInOut})
+        gsap.to(sideInfo,  {delay: .2, duration: .5, opacity: 0, y: -30, stagger: 0.5, ease: Power1.easeInOut})
+        gsap.to(contentHeader,  {delay: 1, duration: .6, opacity: 0, y: -30, stagger: 0.5, ease: Power1.easeInOut})
+        gsap.to(container, {delay: 2, duration: .5, opacity: 0, ease: Power1.easeInOut})
     }
 
     return (
