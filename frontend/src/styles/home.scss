@@ -38,6 +38,8 @@
                 width: 80%;
                 text-align: center;
                 margin-bottom: 0.5em;
+                opacity: 0;
+                transform: translateY(30px);
             }
 
             &__info {
@@ -46,10 +48,14 @@
 
                 &__text {
                     font-size: 0.8em;
+                    opacity: 0;
+                    transform: translateY(30px);
                 }
             }
 
             &__contact {
+                opacity: 0;
+                transform: translateY(30px);
                 &__btn {
                     margin: 0 0.5em 0 0.5em;
                 }
@@ -91,6 +97,8 @@
 
                 &__text {
                     font-size: 0.5em;
+                    opacity: 0;
+                    transform: translateY(30px);
                 }
             }
         }
