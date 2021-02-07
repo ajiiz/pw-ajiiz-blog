@@ -5,10 +5,23 @@ import { Power1, gsap } from "gsap"
 
 const Blog = () => {
 
+    let container = useRef(null)
+
+    /* ANIMATION START */
+    useEffect(() => {
+        gsap.from(container, {delay: 0, duration: 2, opacity: 0, ease: Power1.easeInOut})
+        gsap.to(container, {delay: 0, duration: 2, opacity: 1, ease: Power1.easeInOut})
+    }, [])
+
+    /* ANIMATION CLOSE */
+    const handleAnimationClose = () => {
+        gsap.to(container, {delay: 0, duration: 2, opacity: 0, ease: Power1.easeInOut})
+    }
+
     return (
         <>
-            <Navbar />
-            <div className="blog">
+            <Navbar handleAnimationClose={handleAnimationClose} />
+            <div className="blog" ref= {el => container = el}>
                 Blog
             </div>
         </>
