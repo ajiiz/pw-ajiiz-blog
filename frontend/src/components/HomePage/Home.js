@@ -20,20 +20,20 @@ const Home = () => {
     }
 
     useEffect(() => {
-        if (shouldLoad) {
-            const contentHeader = container.children[0].children[0]
-            const contentInfo = container.children[0].children[1].children
-            const contentContact = container.children[0].children[2]
-            const sideInfo = container.children[1].children[1].children
 
+        const contentHeader = container.children[0].children[0]
+        const contentInfo = container.children[0].children[1].children
+        const contentContact = container.children[0].children[2]
+        const sideInfo = container.children[1].children[1].children
+
+        if (shouldLoad) {
             gsap.from(contentHeader,  {delay: 2, duration: .6, opacity: 0, y: 30, stagger: { amount: 0.6 }, ease: Power1.easeInOut})
             gsap.from(contentInfo,  {delay: 2.6, duration: .5, opacity: 0, y: 30, stagger: 0.5, ease: Power1.easeInOut})
             gsap.from(contentContact,  {delay: 4.6, duration: .5, opacity: 0, y: 30, stagger: 0.5, ease: Power1.easeInOut})
             gsap.from(sideInfo,  {delay: 2.6, duration: .5, opacity: 0, y: 30, stagger: 0.5, ease: Power1.easeInOut})
 
         } else {
-            //Fade out animation
-            console.log("Loading out")
+
         }
     }, [shouldLoad])
 
