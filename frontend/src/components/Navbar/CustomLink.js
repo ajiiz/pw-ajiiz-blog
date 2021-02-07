@@ -10,7 +10,7 @@ padding: 0 15px 0 15px;
 }
 `
 
-const CustomLink = ({ to, name }) => {
+const CustomLink = ({ to, name, handleAnimationClose }) => {
 
     const history = useHistory()
 
@@ -21,7 +21,7 @@ const CustomLink = ({ to, name }) => {
 
     return (
         <StyledLink to={to} onClick={delayedLinkPush}>
-            <li className="navbar__list__item">{name}</li>
+            <li className="navbar__list__item" onClick={handleAnimationClose}>{name}</li>
         </StyledLink>
     )
 }
