@@ -22,9 +22,11 @@ const Blog = () => {
         <>
             <Navbar handleAnimationClose={handleAnimationClose} />
             <div className="blog" ref= {el => container = el}>
+            <div className="banner"><img src={BannerDark} alt="banner"></img></div>
                 <div className="blog__header">
                     <h1 className="blog__header__text">Welcome to my mandness</h1>
                 </div>
+            <div className="banner"><img src={BannerDark} alt="banner"></img></div>
             </div>
         </>
     )
