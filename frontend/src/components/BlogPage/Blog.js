@@ -22,7 +22,9 @@ const Blog = () => {
         <>
             <Navbar handleAnimationClose={handleAnimationClose} />
             <div className="blog" ref= {el => container = el}>
-                Blog
+                <div className="blog__header">
+                    <h1 className="blog__header__text">Welcome to my mandness</h1>
+                </div>
             </div>
         </>
     )
