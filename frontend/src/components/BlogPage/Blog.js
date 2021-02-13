@@ -23,21 +23,21 @@ const Blog = () => {
         <>
             <Navbar handleAnimationClose={handleAnimationClose} />
             <div className="blog" ref= {el => container = el}>
-            <div className="banner"><img src={BannerDark} alt="banner"></img></div>
-            <div className="blog__header">
-                <h1 className="blog__header__text">Welcome to my mandness</h1>
-            </div>
-            <div className="blog__posts">
-            {/* There will be mapping through posts */}
-                <div className="blog__posts__post">
-                    <div className="blog__posts__post__date">date</div>
-                    <h2 className="blog__posts__post__title">title</h2>
-                    <p className="blog__posts__post__content">content</p>
+                <div className="banner"><img src={BannerDark} alt="banner"></img></div>
+                <div className="blog__header">
+                    <h1 className="blog__header__text">Welcome to my mandness</h1>
                 </div>
-            {/* ------------ */}
-            </div>
-            <div className="blog__scroll-up"></div>
-            <div className="banner"><img src={BannerDark} alt="banner"></img></div>
+                <div className="blog__posts">
+                {/* There will be mapping through posts */}
+                    <div className="blog__posts__post">
+                        <div className="blog__posts__post__date">date</div>
+                        <h2 className="blog__posts__post__title">title</h2>
+                        <p className="blog__posts__post__content">content</p>
+                    </div>
+                {/* ------------ */}
+                </div>
+                <div className="blog__scroll-up"></div>
+                <div className="banner"><img src={BannerDark} alt="banner"></img></div>
             </div>
         </>
     )
