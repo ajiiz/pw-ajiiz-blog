@@ -47,7 +47,7 @@ const Home = () => {
             <Loading handleAnimationStart={handleAnimationStart}/>
             <Navbar handleAnimationClose={handleAnimationClose}/>
             <div className="home">
-                <div className="home__banner"><img src={BannerDark} alt="banner"></img></div>
+                <div className="banner"><img src={BannerDark} alt="banner"></img></div>
                 <div className="home__main" ref= {el => container = el}>
                     <div className="home__main__content">
                         <span className="home__main__content__header">I design my own world</span>
@@ -87,7 +87,7 @@ const Home = () => {
                         </a>
                     </div>
                 </div>
-                <div className="home__banner"><img src={BannerDark} alt="banner"></img></div>
+                <div className="banner"><img src={BannerDark} alt="banner"></img></div>
             </div>
         </>
     )
