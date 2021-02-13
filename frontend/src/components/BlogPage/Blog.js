@@ -27,6 +27,9 @@ const Blog = () => {
                 <div className="blog__header">
                     <h1 className="blog__header__text">Welcome to my mandness</h1>
                 </div>
+                <div className="blog__posts">
+
+                </div>
             <div className="banner"><img src={BannerDark} alt="banner"></img></div>
             </div>
         </>
