@@ -33,9 +33,11 @@ const Blog = () => {
                         <div className="blog__posts__post__image">
                             <image></image>
                         </div>
-                        <div className="blog__posts__post__date">date</div>
-                        <h2 className="blog__posts__post__title">title</h2>
-                        <p className="blog__posts__post__content">content</p>
+                        <div className="blog__posts__post__content">
+                            <div className="blog__posts__post__content__date">date</div>
+                            <h2 className="blog__posts__post__content__title">title</h2>
+                            <p className="blog__posts__post__content__details">content</p>
+                        </div>
                     </div>
                 {/* ------------ */}
                 </div>
