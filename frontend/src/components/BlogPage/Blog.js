@@ -30,6 +30,9 @@ const Blog = () => {
                 <div className="blog__posts">
                 {/* There will be mapping through posts */}
                     <div className="blog__posts__post">
+                        <div className="blog__posts__post__image">
+                            <image></image>
+                        </div>
                         <div className="blog__posts__post__date">date</div>
                         <h2 className="blog__posts__post__title">title</h2>
                         <p className="blog__posts__post__content">content</p>
