@@ -1,5 +1,6 @@
 import React, { useEffect, useRef }  from "react"
 import Navbar from "../Navbar/Navbar"
+import BannerDark from "../../assets/banner-dark.svg"
 import "../../styles/blog.scss"
 import { Power1, gsap } from "gsap"
 
