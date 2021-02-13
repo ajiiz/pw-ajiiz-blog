@@ -28,7 +28,13 @@ const Blog = () => {
                     <h1 className="blog__header__text">Welcome to my mandness</h1>
                 </div>
                 <div className="blog__posts">
-
+                {/* There will be mapping through posts */}
+                    <div className="blog__posts__post">
+                        <div className="blog__posts__post__date">date</div>
+                        <h2 className="blog__posts__post__title">title</h2>
+                        <p className="blog__posts__post__content">content</p>
+                    </div>
+                {/* ------------ */}
                 </div>
             <div className="banner"><img src={BannerDark} alt="banner"></img></div>
             </div>
