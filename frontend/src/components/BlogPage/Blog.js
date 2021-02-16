@@ -3,6 +3,7 @@ import Navbar from "../Navbar/Navbar"
 import BannerDark from "../../assets/banner-dark.svg"
 import "../../styles/blog.scss"
 import { Power1, gsap } from "gsap"
+import testImage from '../../assets/home-profile.jpg'
 
 const Blog = () => {
 
@@ -32,7 +33,7 @@ const Blog = () => {
                     {/* There will be mapping through posts */}
                         <div className="blog__wrapper__posts__post">
                             <div className="blog__wrapper__posts__post__image">
-                                <img alt="post"></img>
+                                <img alt="post" src={testImage}></img>
                             </div>
                             <div className="blog__wrapper__posts__post__content">
                                 <div className="blog__wrapper__posts__post__content__date">date</div>
