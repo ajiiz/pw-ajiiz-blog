@@ -26,7 +26,7 @@ const Blog = () => {
                 <div className="banner"><img src={BannerDark} alt="banner"></img></div>
                 <div className="blog__wrapper">
                     <div className="blog__wrapper__header">
-                        <h1 className="blog__wrapper__header__text">Welcome to my mandness</h1>
+                        <p className="blog__wrapper__header__text">Welcome to my mandness</p>
                     </div>
                     <div className="blog__wrapper__posts">
                     {/* There will be mapping through posts */}
