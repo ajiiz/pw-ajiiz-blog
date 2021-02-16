@@ -16,7 +16,11 @@ const CustomLink = ({ to, name, handleAnimationClose }) => {
 
     const delayedLinkPush = event => {
         event.preventDefault()
-
+        let from = history.location.pathname
+        if (to !== from) {
+            handleAnimationClose()
+            setTimeout(() => history.push(to), 3000)
+        }
     }
 
     return (
