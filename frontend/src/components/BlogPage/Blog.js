@@ -32,7 +32,7 @@ const Blog = () => {
                     {/* There will be mapping through posts */}
                         <div className="blog__wrapper__posts__post">
                             <div className="blog__wrapper__posts__post__image">
-                                <image></image>
+                                <img alt="post"></img>
                             </div>
                             <div className="blog__wrapper__posts__post__content">
                                 <div className="blog__wrapper__posts__post__content__date">date</div>
