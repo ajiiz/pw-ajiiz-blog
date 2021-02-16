@@ -88,7 +88,11 @@
                         margin-bottom: 0.4em;
                     }
 
-
+                    &__details {
+                        width: 80%;
+                        font-size: 0.45em;
+                        line-height: 1.25em;
+                    }
                 }
             }
         }
