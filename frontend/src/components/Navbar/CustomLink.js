@@ -16,12 +16,12 @@ const CustomLink = ({ to, name, handleAnimationClose }) => {
 
     const delayedLinkPush = event => {
         event.preventDefault()
-        setTimeout(() => history.push(to), 3000)
+
     }
 
     return (
         <StyledLink to={to} onClick={delayedLinkPush}>
-            <li className="navbar__list__item" onClick={handleAnimationClose}>{name}</li>
+            <li className="navbar__list__item">{name}</li>
         </StyledLink>
     )
 }
