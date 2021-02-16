@@ -31,5 +31,12 @@
                 font-size: 1.75em;
             }
         }
+
+        &__posts {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
