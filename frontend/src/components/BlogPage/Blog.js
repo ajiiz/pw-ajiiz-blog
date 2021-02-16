@@ -36,7 +36,11 @@ const Blog = () => {
                                 <img alt="post" src={testImage}></img>
                             </div>
                             <div className="blog__wrapper__posts__post__content">
-                                <div className="blog__wrapper__posts__post__content__date">date</div>
+                                <div className="blog__wrapper__posts__post__content__date">
+                                    <div className="blog__wrapper__posts__post__content__date__divider"></div>
+                                    <p className="blog__wrapper__posts__post__content__date__text">16.02.21</p>
+                                    <div className="blog__wrapper__posts__post__content__date__divider"></div>
+                                </div>
                                 <p className="blog__wrapper__posts__post__content__title">title</p>
                                 <p className="blog__wrapper__posts__post__content__details">content</p>
                             </div>
