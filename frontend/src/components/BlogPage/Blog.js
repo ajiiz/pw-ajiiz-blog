@@ -37,7 +37,7 @@ const Blog = () => {
                             </div>
                             <div className="blog__wrapper__posts__post__content">
                                 <div className="blog__wrapper__posts__post__content__date">date</div>
-                                <h2 className="blog__wrapper__posts__post__content__title">title</h2>
+                                <p className="blog__wrapper__posts__post__content__title">title</p>
                                 <p className="blog__wrapper__posts__post__content__details">content</p>
                             </div>
                         </div>
