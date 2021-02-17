@@ -32,11 +32,11 @@ const Blog = () => {
 
     const scrollTop = () => {
         document.body.children[1].children[2].scrollTop = 100
+        setIsScrollUp(false)
     }
 
     const checkTop = () => {
-        if (document.body.children[1].children[2].scrollTop > 250) setIsScrollUp(true)
-        else return setIsScrollUp(false)
+        if (document.body.children[1].children[2].scrollTop > 450) setIsScrollUp(true)
     }
 
     return (
@@ -160,7 +160,7 @@ const Blog = () => {
                         </div>
                     {/* ------------ */}
                     </div>
-                    <div className="blog__wrapper__scroll-up" onClick={scrollTop} style={(isScrollUp) ? {opacity: 1, visibility: "visible"} : {opacity: 0, visibility: "hidden"}}>
+                    <div className="blog__wrapper__scroll-up" onClick={scrollTop} style={(isScrollUp) ? {opacity: 1, visibility: "visible"} : null}>
                         <FaArrowUp style={arrowUpStyle}/>
                         <p className="blog__wrapper__scroll-up__text">scroll up</p>
                     </div>
