@@ -97,5 +97,14 @@
                 }
             }
         }
+
+        &__scroll-up {
+            position: fixed;
+            left: 80vw;
+            top: 50vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
     }
 }
