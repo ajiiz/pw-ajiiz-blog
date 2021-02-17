@@ -26,6 +26,10 @@ const Blog = () => {
         fontWeight: "ligher"
     }
 
+    const scrollTop = () => {
+        document.documentElement.scrollTop = 0
+    }
+
     return (
         <>
             <Navbar handleAnimationClose={handleAnimationClose} />
@@ -147,7 +151,7 @@ const Blog = () => {
                         </div>
                     {/* ------------ */}
                     </div>
-                    <div className="blog__wrapper__scroll-up">
+                    <div className="blog__wrapper__scroll-up" >
                         <FaArrowUp style={arrowUpStyle}/>
                         <p className="blog__wrapper__scroll-up__text">scroll up</p>
                     </div>
