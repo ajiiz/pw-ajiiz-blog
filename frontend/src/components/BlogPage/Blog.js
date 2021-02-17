@@ -1,4 +1,4 @@
-import React, { useEffect, useRef }  from "react"
+import React, { useState, useEffect, useRef }  from "react"
 import Navbar from "../Navbar/Navbar"
 import BannerDark from "../../assets/banner-dark.svg"
 import "../../styles/blog.scss"
@@ -8,12 +8,14 @@ import { FaArrowUp } from "react-icons/fa";
 
 const Blog = () => {
 
+
     let container = useRef(null)
 
     /* ANIMATION START */
     useEffect(() => {
         gsap.from(container, {delay: 0, duration: 2, opacity: 0, ease: Power1.easeInOut})
         gsap.to(container, {delay: 0, duration: 2, opacity: 1, ease: Power1.easeInOut})
+
     }, [])
 
     /* ANIMATION CLOSE */
@@ -151,7 +153,7 @@ const Blog = () => {
                         </div>
                     {/* ------------ */}
                     </div>
-                    <div className="blog__wrapper__scroll-up" onClick={scrollTop}>
+                    <div className="blog__wrapper__scroll-up" onClick={scrollTop} style={(isScrollUp) ? {opacity: 1, visibility: "visible"} : {opacity: 0, visibility: "hidden"}}>
                         <FaArrowUp style={arrowUpStyle}/>
                         <p className="blog__wrapper__scroll-up__text">scroll up</p>
                     </div>
