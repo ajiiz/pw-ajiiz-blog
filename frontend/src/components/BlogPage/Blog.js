@@ -4,7 +4,7 @@ import BannerDark from "../../assets/banner-dark.svg"
 import "../../styles/blog.scss"
 import { Power1, gsap } from "gsap"
 import testImage from '../../assets/home-profile.jpg'
-
+import { FaArrowUp } from "react-icons/fa";
 
 const Blog = () => {
 
