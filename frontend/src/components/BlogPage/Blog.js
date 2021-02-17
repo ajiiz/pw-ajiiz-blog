@@ -27,7 +27,7 @@ const Blog = () => {
     }
 
     const scrollTop = () => {
-        document.documentElement.scrollTop = 0
+        document.body.children[1].children[2].scrollTop = 100
     }
 
     return (
@@ -151,7 +151,7 @@ const Blog = () => {
                         </div>
                     {/* ------------ */}
                     </div>
-                    <div className="blog__wrapper__scroll-up" >
+                    <div className="blog__wrapper__scroll-up" onClick={scrollTop}>
                         <FaArrowUp style={arrowUpStyle}/>
                         <p className="blog__wrapper__scroll-up__text">scroll up</p>
                     </div>
