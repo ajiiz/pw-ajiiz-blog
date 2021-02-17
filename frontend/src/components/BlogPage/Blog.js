@@ -5,6 +5,7 @@ import "../../styles/blog.scss"
 import { Power1, gsap } from "gsap"
 import testImage from '../../assets/home-profile.jpg'
 
+
 const Blog = () => {
 
     let container = useRef(null)
@@ -67,9 +68,81 @@ const Blog = () => {
                                 </p>
                             </div>
                         </div>
+                        <div className="blog__wrapper__posts__post">
+                            <div className="blog__wrapper__posts__post__image">
+                                <img alt="post" src={testImage}></img>
+                            </div>
+                            <div className="blog__wrapper__posts__post__content">
+                                <div className="blog__wrapper__posts__post__content__date">
+                                    <div className="blog__wrapper__posts__post__content__date__divider"></div>
+                                    <p className="blog__wrapper__posts__post__content__date__text">16.02.21</p>
+                                    <div className="blog__wrapper__posts__post__content__date__divider"></div>
+                                </div>
+                                <p className="blog__wrapper__posts__post__content__title">Black Roses Title</p>
+                                <p className="blog__wrapper__posts__post__content__details">
+                                    “The Laughing Heart
+                                    your life is your life
+                                    don’t let it be clubbed into dank submission.
+                                    be on the watch.
+                                    there are ways out.
+                                    there is a light somewhere.
+                                    it may not be much light but
+                                    it beats the darkness.
+                                    be on the watch.
+                                    the gods will offer you chances.
+                                    know them.
+                                    take them.
+                                    you can’t beat death but
+                                    you can beat death in life, sometimes.
+                                    and the more often you learn to do it,
+                                    the more light there will be.
+                                    your life is your life.
+                                    know it while you have it.
+                                    you are marvelous
+                                    the gods wait to delight
+                                    in you.”
+                                </p>
+                            </div>
+                        </div>
+                        <div className="blog__wrapper__posts__post">
+                            <div className="blog__wrapper__posts__post__image">
+                                <img alt="post" src={testImage}></img>
+                            </div>
+                            <div className="blog__wrapper__posts__post__content">
+                                <div className="blog__wrapper__posts__post__content__date">
+                                    <div className="blog__wrapper__posts__post__content__date__divider"></div>
+                                    <p className="blog__wrapper__posts__post__content__date__text">16.02.21</p>
+                                    <div className="blog__wrapper__posts__post__content__date__divider"></div>
+                                </div>
+                                <p className="blog__wrapper__posts__post__content__title">Black Roses Title</p>
+                                <p className="blog__wrapper__posts__post__content__details">
+                                    “The Laughing Heart
+                                    your life is your life
+                                    don’t let it be clubbed into dank submission.
+                                    be on the watch.
+                                    there are ways out.
+                                    there is a light somewhere.
+                                    it may not be much light but
+                                    it beats the darkness.
+                                    be on the watch.
+                                    the gods will offer you chances.
+                                    know them.
+                                    take them.
+                                    you can’t beat death but
+                                    you can beat death in life, sometimes.
+                                    and the more often you learn to do it,
+                                    the more light there will be.
+                                    your life is your life.
+                                    know it while you have it.
+                                    you are marvelous
+                                    the gods wait to delight
+                                    in you.”
+                                </p>
+                            </div>
+                        </div>
                     {/* ------------ */}
                     </div>
-                    <div className="blog__wrapper__scroll-up"></div>
+
                 </div>
                 <div className="banner"><img src={BannerDark} alt="banner"></img></div>
             </div>
