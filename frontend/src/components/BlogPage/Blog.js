@@ -21,6 +21,11 @@ const Blog = () => {
         gsap.to(container, {delay: 0, duration: 2, opacity: 0, ease: Power1.easeInOut})
     }
 
+    const arrowUpStyle = {
+        fontSize: "0.60em",
+        fontWeight: "ligher"
+    }
+
     return (
         <>
             <Navbar handleAnimationClose={handleAnimationClose} />
