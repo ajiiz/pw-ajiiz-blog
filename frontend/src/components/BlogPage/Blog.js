@@ -8,7 +8,7 @@ import { FaArrowUp } from "react-icons/fa";
 
 const Blog = () => {
 
-
+    const [isScrollUp, setIsScrollUp] = useState(false)
     let container = useRef(null)
 
     /* ANIMATION START */
@@ -16,6 +16,8 @@ const Blog = () => {
         gsap.from(container, {delay: 0, duration: 2, opacity: 0, ease: Power1.easeInOut})
         gsap.to(container, {delay: 0, duration: 2, opacity: 1, ease: Power1.easeInOut})
 
+        container.addEventListener('scroll', checkTop);
+        return () => window.removeEventListener('scroll', checkTop);
     }, [])
 
     /* ANIMATION CLOSE */
