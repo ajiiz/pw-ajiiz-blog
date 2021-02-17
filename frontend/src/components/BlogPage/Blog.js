@@ -149,7 +149,7 @@ const Blog = () => {
                     </div>
                     <div className="blog__wrapper__scroll-up">
                         <FaArrowUp style={arrowUpStyle}/>
-                        scroll up
+                        <p className="blog__wrapper__scroll-up__text">scroll up</p>
                     </div>
                 </div>
                 <div className="banner"><img src={BannerDark} alt="banner"></img></div>
