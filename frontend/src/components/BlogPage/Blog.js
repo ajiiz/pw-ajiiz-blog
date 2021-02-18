@@ -31,7 +31,7 @@ const Blog = () => {
     }
 
     const scrollTop = () => {
-        document.body.children[1].children[2].scrollTop = 100
+        document.body.children[1].children[2].scrollTop = 0
         setIsScrollUp(false)
     }
 
