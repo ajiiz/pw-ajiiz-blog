@@ -136,6 +136,7 @@
         top: 6vh;
         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
         transform: rotate(45deg);
+        animation: triangleMove 3s reverse infinite;
     }
 }
 
