@@ -116,4 +116,13 @@
             }
         }
     }
+
+    &__background-square {
+        width: 60px;
+        height: 90px;
+        background-color: $color-dark-gray;
+        position: absolute;
+        left: 55vw;
+        top: 25vh;
+    }
 }
