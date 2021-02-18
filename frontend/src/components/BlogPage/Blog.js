@@ -166,6 +166,7 @@ const Blog = () => {
                     </div>
                 </div>
                 <div className="blog__background-square"></div>
+                <div className="blog__background-triangle"></div>
                 <div className="banner"><img src={BannerDark} alt="banner"></img></div>
             </div>
         </>
