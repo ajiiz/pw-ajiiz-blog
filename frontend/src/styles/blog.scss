@@ -124,5 +124,18 @@
         position: absolute;
         left: 55vw;
         top: 25vh;
+        animation: squareMove 3.5s reverse infinite;
+    }
+}
+
+@keyframes squareMove {
+    0% {
+        left: 55vw;
+    }
+    50% {
+        left: 65vw;
+    }
+    100% {
+        left: 55vw;
     }
 }
