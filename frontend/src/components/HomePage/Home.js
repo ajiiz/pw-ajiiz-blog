@@ -86,9 +86,8 @@ const Home = () => {
                             <img className="home__main__socialmedia__link__icon" src={FacebookIcon} alt="facebook"></img>
                         </a>
                     </div>
+                    <div className="background-triangle background-triangle--home"></div>
                 </div>
-                <div className="background-square background-square-home"></div>
-                <div className="background-triangle background-triangle-home"></div>
                 <div className="banner"><img src={BannerDark} alt="banner"></img></div>
             </div>
         </>
