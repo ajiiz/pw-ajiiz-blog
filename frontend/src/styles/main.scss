@@ -90,6 +90,15 @@ button, button:focus, button:active {
     transform: rotate(45deg);
     animation: triangleMove 3s reverse infinite;
 
+    &--home {
+        top: 12vh;
+        left: 15vw;
+    }
+
+    &--blog {
+        top: 6vh;
+        left: 30vw;
+    }
 }
 
 @keyframes squareMove {
