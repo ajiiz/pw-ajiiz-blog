@@ -117,26 +117,4 @@
             }
         }
     }
-
-    &__background-square {
-        width: 60px;
-        height: 90px;
-        background-color: $color-dark-gray;
-        position: absolute;
-        left: 55vw;
-        top: 25vh;
-        animation: squareMove 3.5s reverse infinite;
-    }
-
-    &__background-triangle {
-        width: 250px;
-        height: 250px;
-        background-color: $color-dark-gray;
-        position: absolute;
-        left: 30vw;
-        top: 6vh;
-        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-        transform: rotate(45deg);
-        animation: triangleMove 3s reverse infinite;
-    }
 }
