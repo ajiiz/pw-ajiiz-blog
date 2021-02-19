@@ -146,3 +146,33 @@
          }
      }
 }
+
+@media (max-width: 800px) {
+    .blog {
+        &__wrapper {
+            &__posts {
+                width: 90%;
+
+                &__post {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    margin-bottom: 2em;
+
+                    &__image {
+                        margin-top: 1em;
+                    }
+
+                    &__content {
+                        width: 80%;
+
+                        &__date {
+                            &__divider {
+                                width: 35%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
