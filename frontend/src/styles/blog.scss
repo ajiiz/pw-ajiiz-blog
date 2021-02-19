@@ -140,27 +140,3 @@
         animation: triangleMove 3s reverse infinite;
     }
 }
-
-@keyframes squareMove {
-    0% {
-        left: 55vw;
-    }
-    50% {
-        left: 65vw;
-    }
-    100% {
-        left: 55vw;
-    }
-}
-
-@keyframes triangleMove {
-    0% {
-        transform: rotate(45deg);
-    }
-    50% {
-        transform: rotate(360deg);
-    }
-    100% {
-        transform: rotate(45deg);
-    }
-}
