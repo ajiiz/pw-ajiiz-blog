@@ -204,3 +204,28 @@
     }
 }
 
+@media (max-width: 450px) {
+    .blog {
+        font-size: 30px;
+
+        &__wrapper {
+            &__posts {
+                &__post {
+                    &__content {
+                        &__date {
+                            margin-bottom: 0.5em;
+                        }
+
+                        &__title {
+                            margin-bottom: 0.8em;
+
+                        }
+                        &__details {
+                            line-height: 1.4em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
