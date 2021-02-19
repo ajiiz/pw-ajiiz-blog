@@ -87,6 +87,8 @@ const Home = () => {
                         </a>
                     </div>
                 </div>
+                <div className="background-square background-square-home"></div>
+                <div className="background-triangle background-triangle-home"></div>
                 <div className="banner"><img src={BannerDark} alt="banner"></img></div>
             </div>
         </>
