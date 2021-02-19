@@ -129,6 +129,16 @@ button, button:focus, button:active {
     .cursor {
         display: none;
     }
+
+    .background-triangle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .background-square {
+        width: 40px;
+        height: 60px;
+    }
 }
 
 @media (max-width: 600px) {
