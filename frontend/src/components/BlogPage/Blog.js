@@ -165,8 +165,8 @@ const Blog = () => {
                         <p className="blog__wrapper__scroll-up__text">scroll up</p>
                     </div>
                 </div>
-                <div className="blog__background-square"></div>
-                <div className="blog__background-triangle"></div>
+                <div className="background-square"></div>
+                <div className="background-triangle"></div>
                 <div className="banner"><img src={BannerDark} alt="banner"></img></div>
             </div>
         </>
