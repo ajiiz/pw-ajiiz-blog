@@ -8,9 +8,13 @@ const Login = () => {
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
 
+    const handleAnimationClose = () => {
+        console.log("closing login")
+    }
+
     return (
         <>
-            <Navbar />
+            <Navbar handleAnimationClose={handleAnimationClose} />
             <div className="login">
                 <div className="banner"><img src={BannerDark} alt="banner"></img></div>
                 <div className="login__wrapper">
