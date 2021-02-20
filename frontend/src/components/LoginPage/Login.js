@@ -34,6 +34,7 @@ const Login = () => {
                         />
                     </form>
                 </div>
+                <div className="background-triangle background-triangle--login"></div>
                 <div className="banner"><img src={BannerDark} alt="banner"></img></div>
             </div>
         </>
