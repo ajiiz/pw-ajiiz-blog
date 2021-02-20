@@ -1,9 +1,13 @@
-import React from "react"
+import React, { useState } from "react"
 import Navbar from "../Navbar/Navbar"
 import BannerDark from "../../assets/banner-dark.svg"
 import "../../styles/login.scss"
 
 const Login = () => {
+
+    const [username, setUsername] = useState("")
+    const [password, setPassword] = useState("")
+
     return (
         <>
             <Navbar />
