@@ -12,22 +12,22 @@ const Login = () => {
                 <div className="login__wrapper">
                     <p className="login__wrapper__header">Thats a secrect area</p>
                     <form className="login__wrapper__form">
-                        <label>
+                        <p className="login__wrapper__form__name">
                             Username
-                            <input
-                                type="text"
-                                name="username"
-                                value="{username}"
-                            />
-                        </label>
-                        <label>
+                        </p>
+                        <input
+                            type="text"
+                            name="username"
+                            value="{username}"
+                        />
+                        <p className="login__wrapper__form__name">
                             Password
-                            <input
-                                type="password"
-                                name="password"
-                                value="{password}"
-                            />
-                        </label>
+                        </p>
+                        <input
+                            type="password"
+                            name="password"
+                            value="{password}"
+                        />
                         <input
                             type="submit"
                             value="sign in"
