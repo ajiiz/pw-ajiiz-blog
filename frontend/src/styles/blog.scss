@@ -27,6 +27,8 @@
             text-align: center;
             width: 50%;
             margin-bottom: 10vh;
+            opacity: 0;
+            transform: translateY(30px);
 
             &__text {
                 font-size: 1.65em;
