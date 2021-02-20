@@ -23,7 +23,9 @@ const Blog = () => {
 
     /* ANIMATION CLOSE */
     const handleAnimationClose = () => {
-
+        gsap.to(container.children[1].children[0],  {delay: 1, duration: .5, opacity: 0, y: "-30", ease: Power1.easeInOut})
+        gsap.to(container.children[1].children[1].children,{delay: 1.2, duration: .5, opacity: 0, y: "-30", stagger: 0.5, ease: Power1.easeInOut})
+        gsap.to(container, {delay: 1.8, duration: 1, opacity: 0, ease: Power1.easeInOut})
     }
 
     const arrowUpStyle = {
