@@ -1,5 +1,6 @@
 import React from "react"
 import Navbar from "../Navbar/Navbar"
+import BannerDark from "../../assets/banner-dark.svg"
 import "../../styles/login.scss"
 
 const Login = () => {
@@ -7,29 +8,33 @@ const Login = () => {
         <>
             <Navbar />
             <div className="login">
-                <p className="login__header">Thats a secrect area</p>
-                <form className="login__form">
-                    <label>
-                        Username
+                <div className="banner"><img src={BannerDark} alt="banner"></img></div>
+                <div className="login__wrapper">
+                    <p className="login__wrapper__header">Thats a secrect area</p>
+                    <form className="login__wrapper__form">
+                        <label>
+                            Username
+                            <input
+                                type="text"
+                                name="username"
+                                value="{username}"
+                            />
+                        </label>
+                        <label>
+                            Password
+                            <input
+                                type="password"
+                                name="password"
+                                value="{password}"
+                            />
+                        </label>
                         <input
-                            type="text"
-                            name="username"
-                            value="{username}"
+                            type="submit"
+                            value="sign in"
                         />
-                    </label>
-                    <label>
-                        Password
-                        <input
-                            type="password"
-                            name="password"
-                            value="{password}"
-                        />
-                    </label>
-                    <input
-                        type="submit"
-                        value="sign in"
-                    />
-                </form>
+                    </form>
+                </div>
+                <div className="banner"><img src={BannerDark} alt="banner"></img></div>
             </div>
         </>
     )
