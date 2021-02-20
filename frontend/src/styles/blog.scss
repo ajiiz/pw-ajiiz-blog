@@ -43,6 +43,7 @@
             border: 1px solid $color-white;
             border-top: none;
             border-bottom: none;
+            opacity: 0;
 
             &__post {
                 height: fit-content;
