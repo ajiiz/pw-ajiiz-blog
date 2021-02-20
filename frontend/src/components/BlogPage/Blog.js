@@ -13,8 +13,8 @@ const Blog = () => {
 
     /* ANIMATION START */
     useEffect(() => {
-        gsap.from(container, {delay: 0, duration: 2, opacity: 0, ease: Power1.easeInOut})
-        gsap.to(container, {delay: 0, duration: 2, opacity: 1, ease: Power1.easeInOut})
+        gsap.to(container.children[1].children[0],  {delay: 1, duration: 1, opacity: 1, y: 0, ease: Power1.easeInOut})
+
 
         container.addEventListener('scroll', checkTop);
         return () => window.removeEventListener('scroll', checkTop);
