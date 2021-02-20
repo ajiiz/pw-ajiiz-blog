@@ -14,6 +14,7 @@ const Blog = () => {
     /* ANIMATION START */
     useEffect(() => {
         gsap.to(container.children[1].children[0],  {delay: 1, duration: .8, opacity: 1, y: 0, ease: Power1.easeInOut})
+        gsap.to(container.children[1].children[1],{delay: 1.6, duration: .5, opacity: 1, stagger: 0.5, ease: Power1.easeInOut})
         gsap.to(container.children[1].children[1].children,{delay: 1.6, duration: .5, opacity: 1, y: 0, stagger: 0.5, ease: Power1.easeInOut})
 
         container.addEventListener('scroll', checkTop);
@@ -22,7 +23,7 @@ const Blog = () => {
 
     /* ANIMATION CLOSE */
     const handleAnimationClose = () => {
-        gsap.to(container, {delay: 0, duration: 2, opacity: 0, ease: Power1.easeInOut})
+
     }
 
     const arrowUpStyle = {
