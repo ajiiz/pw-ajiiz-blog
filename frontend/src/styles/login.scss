@@ -14,11 +14,14 @@
 
     &__wrapper {
         width: 90%;
-        height: 100%;
+        height: 87vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 30vh;
+        padding-top: 10vh;
+        margin-top: 8vh;
+        background: url("../assets/home-border.png") no-repeat left bottom;
+        background-size: contain;
 
         &__header {
             font-size: 1.75em;
