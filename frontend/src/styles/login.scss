@@ -77,3 +77,15 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .login {
+        font-size: 45px;
+
+        &__wrapper {
+            margin-top: 0;
+            padding-top: 0;
+            background-position: left;
+        }
+    }
+}
