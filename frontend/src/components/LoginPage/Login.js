@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import Navbar from "../Navbar/Navbar"
 import BannerDark from "../../assets/banner-dark.svg"
 import { Power1, gsap } from "gsap"
@@ -9,14 +9,16 @@ const Login = () => {
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
 
+    let container = useRef(null)
+
     const handleAnimationClose = () => {
-        console.log("closing login")
+
     }
 
     return (
         <>
             <Navbar handleAnimationClose={handleAnimationClose} />
-            <div className="login">
+            <div className="login" ref={el => container = el}>
                 <div className="banner"><img src={BannerDark} alt="banner"></img></div>
                 <div className="login__wrapper">
                     <p className="login__wrapper__header">Thats a secrect area</p>
