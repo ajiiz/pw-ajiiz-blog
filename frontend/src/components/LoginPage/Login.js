@@ -24,7 +24,7 @@ const Login = () => {
                             Username
                         </p>
                         <input
-                            className="login_wrapper__form__input"
+                            className="login__wrapper__form__input"
                             type="text"
                             name="username"
                             value={username}
@@ -34,14 +34,14 @@ const Login = () => {
                             Password
                         </p>
                         <input
-                            className="login_wrapper__form__input"
+                            className="login__wrapper__form__input"
                             type="password"
                             name="password"
                             value={password}
                             onChange={e => setPassword(e.target.value)}
                         />
                         <input
-                            className="login_wrapper__form__submit"
+                            className="login__wrapper__form__submit"
                             type="submit"
                             value="sign in"
                         />
