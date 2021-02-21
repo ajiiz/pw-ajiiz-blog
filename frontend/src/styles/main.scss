@@ -31,6 +31,10 @@ a, a:hover, a:visited {
     text-decoration: none;
 }
 
+input, input:focus, input:hover {
+    border: none;
+    outline: none;
+}
 
 .btn {
     width: 210px;
