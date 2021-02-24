@@ -3,6 +3,7 @@ import { Route, BrowserRouter as Router, Switch, Redirect } from "react-router-d
 import Home from "./components/HomePage/Home"
 import Login from "./components/LoginPage/Login"
 import Blog from "./components/BlogPage/Blog"
+import Post from "./components/PostPage/Post"
 import "./styles/main.scss"
 import CustomCursor from "./components/CustomCursor/CustomCursor"
 
@@ -18,6 +19,7 @@ const App = () => {
                     <Route exact path="/home" component={Home} />
                     <Route exact path="/login" component={Login} />
                     <Route exact path="/blog" component={Blog} />
+                    <Route exact path="/post" component={Post} />
                 </Switch>
             </Router>
         </>
