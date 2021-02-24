@@ -51,19 +51,12 @@
 
             &__input {
                 width: 100%;
-                background-color: $color-dark-gray;
-                color: $color-white;
                 font-size: 0.4em;
                 margin-bottom: 1em;
                 padding-left: .3em;
                 height: 2em;
-                border: 2px solid $color-white;
                 opacity: 0;
                 transform: translateY(30px);
-
-                &:hover, &:focus {
-                    border: 2px solid $color-white;
-                }
             }
 
             &__submit {
