@@ -110,6 +110,15 @@ button, button:focus, button:active {
     }
 }
 
+.input-text {
+    background-color: $color-dark-gray;
+    border: 2px solid $color-white;
+
+    &:hover, &:focus {
+        border: 2px solid $color-white;
+    }
+}
+
 @keyframes squareMove {
     0% {
         left: 55vw;
