@@ -35,7 +35,7 @@ const Login = () => {
                             Username
                         </p>
                         <input
-                            className="login__wrapper__form__input"
+                            className="input-text login__wrapper__form__input"
                             type="text"
                             placeholder="username"
                             name="username"
@@ -46,7 +46,7 @@ const Login = () => {
                             Password
                         </p>
                         <input
-                            className="login__wrapper__form__input"
+                            className="input-text login__wrapper__form__input"
                             type="password"
                             placeholder="password"
                             name="password"
@@ -54,7 +54,7 @@ const Login = () => {
                             onChange={e => setPassword(e.target.value)}
                         />
                         <input
-                            className="login__wrapper__form__submit"
+                            className="input-submit login__wrapper__form__submit"
                             type="submit"
                             value="sign in"
                         />
