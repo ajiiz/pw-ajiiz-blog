@@ -11,4 +11,16 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
+    &__wrapper {
+        width: 90%;
+        height: 87vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10vh;
+        margin-top: 8vh;
+        background: url("../assets/home-border.png") no-repeat left bottom;
+        background-size: contain;
+    }
 }
