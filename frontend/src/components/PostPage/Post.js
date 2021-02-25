@@ -16,7 +16,7 @@ const Post = () => {
         <div className="post">
                 <div className="banner"><img src={BannerDark} alt="banner"></img></div>
                 <div className="post__wrapper">
-                    <p className="post__wrapper__header">Thats a secrect area</p>
+                    <p className="post__wrapper__header">Post office</p>
                     <form className="post__wrapper__form">
                         <p className="post__wrapper__form__name">
                             Title
