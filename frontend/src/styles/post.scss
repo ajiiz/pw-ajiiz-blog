@@ -18,9 +18,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 10vh;
+        padding-top: 3vh;
         margin-top: 8vh;
         background: url("../assets/home-border.png") no-repeat left bottom;
         background-size: contain;
+        //opacity: 0;
+
+
     }
 }
