@@ -32,7 +32,7 @@ const Post = () => {
                             Content
                         </p>
                         <input
-                            className="input-text post__wrapper__form__input"
+                            className="input-text post__wrapper__form__input post__wrapper__form__input--textarea"
                             type="text"
                             placeholder=""
                             name="content"
