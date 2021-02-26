@@ -57,6 +57,12 @@
                 height: 2em;
                 //opacity: 0;
                 //transform: translateY(30px);
+
+                &--textarea {
+                    height: 5em;
+                    vertical-align: top;
+                    text-align: left;
+                }
             }
 
             &__submit {
