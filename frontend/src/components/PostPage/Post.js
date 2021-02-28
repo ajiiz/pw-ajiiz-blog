@@ -30,7 +30,8 @@ const Post = () => {
                             type="text"
                             placeholder="username"
                             name="title"
-                            value=""
+                            value={title}
+                            onChange={e => setTitle(e.target.value)}
                         />
                         <p className="post__wrapper__form__name">
                             Content
@@ -39,7 +40,8 @@ const Post = () => {
                             className="input-text post__wrapper__form__input post__wrapper__form__input--textarea"
                             placeholder="content"
                             name="content"
-                            value=""
+                            value={content}
+                            onChange={e => setContent(e.target.value)}
                         />
                         <p className="post__wrapper__form__name">
                             Image
@@ -48,6 +50,7 @@ const Post = () => {
                             className="post__wrapper__form__image"
                             type="file"
                             name="image"
+                            onChange={e => setFile(e.target.files[0])}
                         />
                         <input
                             className="input-submit post__wrapper__form__submit"
