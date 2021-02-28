@@ -13,7 +13,9 @@ const Post = () => {
     let container = useRef(null)
 
     const handleAnimationClose = () => {
-        //There goes animation when changing the page
+        gsap.to(container.children[1].children[1].children, {duration: .5, opacity: 0, y: "-30", stagger: 0.2, ease: Power1.easeInOut})
+        gsap.to(container.children[1].children[0], {delay: 1, duration: .6, opacity: 0, y: "-30", ease: Power1.easeInOut})
+        gsap.to(container, {delay: 1.3, duration: .4, opacity: 0, ease: Power1.easeInOut})
     }
 
     return (
