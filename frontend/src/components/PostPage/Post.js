@@ -41,7 +41,7 @@ const Post = () => {
                             Image
                         </p>
                         <input
-                            className="input-submit post__wrapper__form__image"
+                            className="post__wrapper__form__image"
                             type="file"
                             name="image"
                         />
