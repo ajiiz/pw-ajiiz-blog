@@ -19,7 +19,6 @@
         flex-direction: column;
         align-items: center;
         padding-top: 3vh;
-        margin-top: 8vh;
         background: url("../assets/home-border.png") no-repeat left bottom;
         background-size: contain;
         //opacity: 0;
@@ -83,6 +82,19 @@
                 //opacity: 0;
                 //transform: translateY(30px);
             }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .post {
+        font-size: 45px;
+
+        &__wrapper {
+            margin-top: 0;
+            padding-top: 0;
+            height: 100%;
+            background: none;
         }
     }
 }
