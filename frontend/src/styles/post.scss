@@ -108,3 +108,19 @@
         font-size: 40px;
     }
 }
+
+@media (max-width: 500px) {
+    .post {
+        font-size: 35px;
+        &__wrapper {
+            &__header {
+                font-size: 1.4em;
+            }
+
+            &__form {
+                width: 90%;
+                z-index: 1;
+            }
+        }
+    }
+}
