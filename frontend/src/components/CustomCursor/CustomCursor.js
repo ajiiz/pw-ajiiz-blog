@@ -17,13 +17,19 @@ const Cursor = styled.div.attrs(props => ({
     height: 35px;
     `
 
+const CursorView = styled.svg `
+    position: absolute;
+    top: -8;
+    left: -8;
+`
+
 const CustomCursor = () => {
 
     const { clientX, clientY } = useMousePosition()
 
     return (
         <Cursor className="cursor" clientY={clientY} clientX={clientX}>
-            <svg style={{ position: "absolute", top: -8, left: -8 }}></svg>
+            <CursorView></CursorView>
         </Cursor>
     )
 }
