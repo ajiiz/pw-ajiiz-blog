@@ -10,6 +10,8 @@ const Post = () => {
     const [content, setContent] = useState("")
     const [file, setFile] = useState()
 
+    let container = useRef(null)
+
     const handleAnimationClose = () => {
         //There goes animation when changing the page
     }
@@ -17,7 +19,7 @@ const Post = () => {
     return (
         <>
         <Navbar handleAnimationClose={handleAnimationClose} />
-        <div className="post">
+        <div className="post" ref={el => container = el}>
                 <div className="banner"><img src={BannerDark} alt="banner"></img></div>
                 <div className="post__wrapper">
                     <p className="post__wrapper__header">Post office</p>
