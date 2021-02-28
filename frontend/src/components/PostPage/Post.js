@@ -1,10 +1,14 @@
-import React from "react"
+import React, { useEffect, useState, useRef } from "react"
 import Navbar from "../Navbar/Navbar"
 import BannerDark from "../../assets/banner-dark.svg"
 import { Power1, gsap } from "gsap"
 import "../../styles/post.scss"
 
 const Post = () => {
+
+    const [title, setTitle] = useState("")
+    const [content, setContent] = useState("")
+    const [file, setFile] = useState()
 
     const handleAnimationClose = () => {
         //There goes animation when changing the page
