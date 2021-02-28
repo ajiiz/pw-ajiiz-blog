@@ -31,10 +31,9 @@ const Post = () => {
                         <p className="post__wrapper__form__name">
                             Content
                         </p>
-                        <input
+                        <textarea
                             className="input-text post__wrapper__form__input post__wrapper__form__input--textarea"
-                            type="text"
-                            placeholder=""
+                            placeholder="content"
                             name="content"
                             value=""
                         />
