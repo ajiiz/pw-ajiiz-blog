@@ -1,24 +1,22 @@
-import express from "express";
-import mongoose from "mongoose";
+import express from 'express'
+import mongoose from 'mongoose'
+import cors from 'cors'
+import dotenv from 'dotenv'
 
-const app = express();
-app.use(express.static("../client/index.js"));
+//Initialize app
+const app = express()
+dotenv.config()
 
-// Body Parser
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(express.json({ limit: "30mb", extended: true}))
+app.use(express.urlencoded({ limit: "30mb", extended: true}))
+app.use(cors())
 
-// DB Config
-const db = require('./.env').mongoURI;
+const CONNECTION_URL = process.env.CONNECTION_URL
+const PORT = process.env.PORT || 5000
 
-// Connect to MongoDB
 mongoose
-    .connect(db)
-    .then(()=> console.log('MongoDB is successfully connected'))
-    .catch(err => console.log(err));
+    .connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => app.listen(PORT, () => console.log(`Server running on port: ${PORT}`)))
+    .catch((error) => console.log(error.message))
 
-const port = process.env.PORT || 5000;
-
-app.listen(port, () =>
-    console.log(`Server started on port: 5000`)
-);
+mongoose.set("useFindAndModify", false)
