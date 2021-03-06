@@ -47,6 +47,7 @@ const Post = () => {
                         </p>
                         <textarea
                             className="input-text post__wrapper__form__input post__wrapper__form__input--textarea"
+                            placeholder="content"
                             value={postData.content}
                             onChange={(e) => setPostData({ ...postData, content: e.target.value })}
                         />
