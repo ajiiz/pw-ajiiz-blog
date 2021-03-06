@@ -7,6 +7,10 @@ const postSchema = mongoose.Schema({
     {
         data: Buffer,
         contentType: String
+    },
+    createdAt: {
+        type: Date,
+        default: new Date()
     }
 })
 
