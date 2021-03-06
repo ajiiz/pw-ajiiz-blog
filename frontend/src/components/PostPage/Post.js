@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react"
 import Navbar from "../Navbar/Navbar"
 import BannerDark from "../../assets/banner-dark.svg"
+import FileBase from "react-file-base64"
 import { Power1, gsap } from "gsap"
 import "../../styles/post.scss"
 
@@ -9,6 +10,7 @@ const Post = () => {
     const [title, setTitle] = useState("")
     const [content, setContent] = useState("")
     const [file, setFile] = useState()
+    const [postData, setPostData] = useState({ title: "", content: "", file: ""})
 
     let container = useRef(null)
 
@@ -56,12 +58,13 @@ const Post = () => {
                         <p className="post__wrapper__form__name">
                             Image
                         </p>
-                        <input
-                            className="post__wrapper__form__image"
-                            type="file"
-                            name="image"
-                            onChange={e => setFile(e.target.files[0])}
-                        />
+                        <div className="post__wrapper__form__image">
+                            <FileBase
+                                type="file"
+                                multiple={false}
+                                onDone={({ base64 }) => setPostData({ ...postData, file: base64})}
+                            />
+                        </div>
                         <input
                             className="input-submit post__wrapper__form__submit"
                             type="submit"
