@@ -69,6 +69,7 @@
                 border: 2px solid $color-white;
                 opacity: 0;
                 transform: translateY(30px);
+                display: flex;
 
                 &:hover {
                     cursor: none;
