@@ -23,6 +23,11 @@ const Post = () => {
         gsap.to(container.children[1].children[1].children, {delay: 1.2, duration: .5, opacity: 1, y: 0, stagger: 0.3, ease: Power1.easeInOut})
     }, [])
 
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log(postData)
+    }
+
     return (
         <>
         <Navbar handleAnimationClose={handleAnimationClose} />
@@ -30,7 +35,7 @@ const Post = () => {
                 <div className="banner"><img src={BannerDark} alt="banner"></img></div>
                 <div className="post__wrapper">
                     <p className="post__wrapper__header">Post office</p>
-                    <form className="post__wrapper__form">
+                    <form className="post__wrapper__form" onSubmit={handleSubmit}>
                         <p className="post__wrapper__form__name">
                             Title
                         </p>
