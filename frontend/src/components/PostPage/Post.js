@@ -7,9 +7,6 @@ import "../../styles/post.scss"
 
 const Post = () => {
 
-    const [title, setTitle] = useState("")
-    const [content, setContent] = useState("")
-    const [file, setFile] = useState()
     const [postData, setPostData] = useState({ title: "", content: "", file: ""})
 
     let container = useRef(null)
@@ -42,18 +39,16 @@ const Post = () => {
                             type="text"
                             placeholder="username"
                             name="title"
-                            value={title}
-                            onChange={e => setTitle(e.target.value)}
+                            value={postData.title}
+                            onChange={(e) => setPostData({ ...postData, title: e.target.value })}
                         />
                         <p className="post__wrapper__form__name">
                             Content
                         </p>
                         <textarea
                             className="input-text post__wrapper__form__input post__wrapper__form__input--textarea"
-                            placeholder="content"
-                            name="content"
-                            value={content}
-                            onChange={e => setContent(e.target.value)}
+                            value={postData.content}
+                            onChange={(e) => setPostData({ ...postData, content: e.target.value })}
                         />
                         <p className="post__wrapper__form__name">
                             Image
