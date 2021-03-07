@@ -1,13 +1,14 @@
 import React, { useEffect, useRef } from "react"
+import { Power1, gsap } from "gsap"
 import Loading from "../LoadingPage/Loading"
 import Navbar from "../Navbar/Navbar"
+
 import BannerDark from "../../assets/banner-dark.svg"
 import ProfileImage from "../../assets/home-profile.jpg"
 import FacebookIcon from "../../assets/facebook-icon.svg"
 import GithubIcon from "../../assets/github-icon.svg"
 import InstagramIcon from "../../assets/instagram-icon.svg"
 import LinkedInIcon from "../../assets/linkedin-icon.svg"
-import { Power1, gsap } from "gsap"
 import "../../styles/home.scss"
 
 const Home = () => {
