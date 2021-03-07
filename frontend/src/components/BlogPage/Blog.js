@@ -1,18 +1,17 @@
 import React, { useState, useEffect, useRef }  from "react"
 import { useSelector } from "react-redux"
-import Navbar from "../Navbar/Navbar"
-import BannerDark from "../../assets/banner-dark.svg"
-import "../../styles/blog.scss"
 import { Power1, gsap } from "gsap"
+import Navbar from "../Navbar/Navbar"
+
+import BannerDark from "../../assets/banner-dark.svg"
 import testImage from '../../assets/home-profile.jpg'
 import { FaArrowUp } from "react-icons/fa";
+import "../../styles/blog.scss"
 
 const Blog = () => {
 
     const [isScrollUp, setIsScrollUp] = useState(false)
     const posts = useSelector((state) => state.posts)
-
-    console.log(posts)
 
     let container = useRef(null)
 
