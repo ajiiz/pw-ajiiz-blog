@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react"
-import Navbar from "../Navbar/Navbar"
-import BannerDark from "../../assets/banner-dark.svg"
 import { Power1, gsap } from "gsap"
+import Navbar from "../Navbar/Navbar"
+
+import BannerDark from "../../assets/banner-dark.svg"
 import "../../styles/login.scss"
 
 const Login = () => {
