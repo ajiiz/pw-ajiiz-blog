@@ -1,13 +1,14 @@
 import React, { useEffect } from "react"
 import { Route, BrowserRouter as Router, Switch, Redirect } from "react-router-dom"
 import { useDispatch } from "react-redux"
+import { getPosts } from "./actions/posts"
+import CustomCursor from "./components/CustomCursor/CustomCursor"
 import Home from "./components/HomePage/Home"
 import Login from "./components/LoginPage/Login"
 import Blog from "./components/BlogPage/Blog"
 import Post from "./components/PostPage/Post"
+
 import "./styles/main.scss"
-import CustomCursor from "./components/CustomCursor/CustomCursor"
-import { getPosts } from "./actions/posts"
 
 const App = () => {
 
