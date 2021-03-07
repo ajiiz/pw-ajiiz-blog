@@ -1,11 +1,12 @@
 import React, { useEffect, useState, useRef } from "react"
-import Navbar from "../Navbar/Navbar"
-import BannerDark from "../../assets/banner-dark.svg"
-import FileBase from "react-file-base64"
-import { Power1, gsap } from "gsap"
-import "../../styles/post.scss"
 import { useDispatch } from "react-redux"
 import { createPost } from "../../actions/posts"
+import FileBase from "react-file-base64"
+import { Power1, gsap } from "gsap"
+import Navbar from "../Navbar/Navbar"
+
+import BannerDark from "../../assets/banner-dark.svg"
+import "../../styles/post.scss"
 
 const Post = () => {
 
