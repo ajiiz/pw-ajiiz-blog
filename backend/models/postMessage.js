@@ -3,11 +3,7 @@ import mongoose from 'mongoose'
 const postSchema = mongoose.Schema({
     title: String,
     content: String,
-    image:
-    {
-        data: Buffer,
-        contentType: String
-    },
+    selectedFile: String,
     createdAt: {
         type: Date,
         default: new Date()
