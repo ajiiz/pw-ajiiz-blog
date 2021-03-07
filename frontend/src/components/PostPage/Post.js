@@ -4,10 +4,13 @@ import BannerDark from "../../assets/banner-dark.svg"
 import FileBase from "react-file-base64"
 import { Power1, gsap } from "gsap"
 import "../../styles/post.scss"
+import { useDispatch } from "react-redux"
+import { createPost } from "../../actions/posts"
 
 const Post = () => {
 
-    const [postData, setPostData] = useState({ title: "", content: "", file: ""})
+    const [postData, setPostData] = useState({ title: "", content: "", selectedFile: ""})
+    const dispatch = useDispatch()
 
     let container = useRef(null)
 
@@ -23,8 +26,9 @@ const Post = () => {
         gsap.to(container.children[1].children[1].children, {delay: 1.2, duration: .5, opacity: 1, y: 0, stagger: 0.3, ease: Power1.easeInOut})
     }, [])
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
+        dispatch(createPost(postData))
         console.log(postData)
     }
 
@@ -63,7 +67,7 @@ const Post = () => {
                             <FileBase
                                 type="file"
                                 multiple={false}
-                                onDone={({ base64 }) => setPostData({ ...postData, file: base64})}
+                                onDone={({ base64 }) => setPostData({ ...postData, selectedFile: base64})}
                             />
                         </div>
                         <input
