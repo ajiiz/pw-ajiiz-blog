@@ -10,13 +10,13 @@ export const getPosts = async (req, res) => {
     }
 }
 
-export const createPost = async (res, req) => {
-    const post = req.body
-    const newPost = new PostMessage(post)
+export const createPost = async (req, res) => {
+    const { title, content, selectedFile } = req.body;
+    const newPostMessage = new PostMessage({ title, content, selectedFile })
 
     try {
-        await newPost.save()
-        res.status(201).json(newPost)
+        await newPostMessage.save()
+        res.status(201).json(newPostMessage)
     } catch (error) {
         res.status(409).json({ message: error.message })
     }
