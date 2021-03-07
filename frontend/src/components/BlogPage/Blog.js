@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef }  from "react"
+import { useSelector } from "react-redux"
 import Navbar from "../Navbar/Navbar"
 import BannerDark from "../../assets/banner-dark.svg"
 import "../../styles/blog.scss"
@@ -9,6 +10,10 @@ import { FaArrowUp } from "react-icons/fa";
 const Blog = () => {
 
     const [isScrollUp, setIsScrollUp] = useState(false)
+    const posts = useSelector((state) => state.posts)
+
+    console.log(posts)
+
     let container = useRef(null)
 
     /* ANIMATION START */
