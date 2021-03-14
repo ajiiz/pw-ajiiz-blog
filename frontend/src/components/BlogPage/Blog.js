@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef }  from "react"
 import { useSelector } from "react-redux"
 import { Power1, gsap } from "gsap"
 import Navbar from "../Navbar/Navbar"
+import BlogPost from"./BlogPost"
 
 import BannerDark from "../../assets/banner-dark.svg"
 import testImage from '../../assets/home-profile.jpg'
@@ -58,21 +59,7 @@ const Blog = () => {
                     {!posts.length ? <p>Posts missing</p> : (
                         <div className="blog__wrapper__posts">
                         {posts.map((post, key) => (
-                                <div className="blog__wrapper__posts__post" key={key}>
-                                    <div className="blog__wrapper__posts__post__image">
-                                        <img alt="post" src={post.selectedFile}></img>
-                                    </div>
-                                    <div className="blog__wrapper__posts__post__content">
-                                        <div className="blog__wrapper__posts__post__content__date">
-                                            <div className="blog__wrapper__posts__post__content__date__divider"></div>
-                                            <p className="blog__wrapper__posts__post__content__date__text">16.02.21</p>
-                                            <div className="blog__wrapper__posts__post__content__date__divider"></div>
-                                        </div>
-                                        <p className="blog__wrapper__posts__post__content__title">{post.title}</p>
-                                        <p className="blog__wrapper__posts__post__content__details">{post.content}
-                                        </p>
-                                    </div>
-                                </div>
+                            <BlogPost post={post} key={key} />
                         ))}
                         </div>
                     )}
