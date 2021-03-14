@@ -1,8 +1,8 @@
 import React from 'react'
 
-const BlogPost = ({post, key}) => {
+const BlogPost = ({ post }) => {
     return (
-        <div className="blog__wrapper__posts__post" key={key}>
+        <div className="blog__wrapper__posts__post">
             <div className="blog__wrapper__posts__post__image">
                 <img alt="post" src={post.selectedFile}></img>
             </div>
