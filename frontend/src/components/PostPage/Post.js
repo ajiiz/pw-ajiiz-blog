@@ -27,10 +27,14 @@ const Post = () => {
         gsap.to(container.children[1].children[1].children, {delay: 1.2, duration: .5, opacity: 1, y: 0, stagger: 0.3, ease: Power1.easeInOut})
     }, [])
 
+    const clearPostData = () => {
+        setPostData({ title: "", content: "", selectedFile: "" })
+    }
+
     const handleSubmit = async (e) => {
         e.preventDefault()
         dispatch(createPost(postData))
-        console.log(postData)
+        clearPostData()
     }
 
     return (
