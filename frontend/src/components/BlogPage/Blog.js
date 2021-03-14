@@ -5,7 +5,6 @@ import Navbar from "../Navbar/Navbar"
 import BlogPost from"./BlogPost"
 
 import BannerDark from "../../assets/banner-dark.svg"
-import testImage from '../../assets/home-profile.jpg'
 import { FaArrowUp } from "react-icons/fa";
 import "../../styles/blog.scss"
 
