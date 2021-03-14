@@ -54,7 +54,7 @@ const Blog = () => {
                         <p className="blog__wrapper__header__text">Welcome to my madness</p>
                     </div>
                     <div className="blog__wrapper__posts">
-                    {!posts.length ? null : (
+                    {!posts.length ? <p>There will be loading component</p> : (
                         posts.map((post, key) => (
                             <BlogPost post={post} key={key} />
                         ))
