@@ -21,7 +21,6 @@ const Blog = () => {
         gsap.to(container.children[1].children[0],  {delay: 1, duration: .8, opacity: 1, y: 0, ease: Power1.easeInOut})
         gsap.to(container.children[1].children[1],{delay: 1.6, duration: .5, opacity: 1, stagger: 0.5, ease: Power1.easeInOut})
         gsap.to(container.children[1].children[1].children,{delay: 1.6, duration: .5, opacity: 1, y: 0, stagger: 0.5, ease: Power1.easeInOut})
-
         container.addEventListener('scroll', checkTop);
         return () => window.removeEventListener('scroll', checkTop);
     }, [])
@@ -46,7 +45,6 @@ const Blog = () => {
     const checkTop = () => {
         if (document.body.children[1].children[2].scrollTop > 450) setIsScrollUp(true)
     }
-
     return (
         <>
             <Navbar handleAnimationClose={handleAnimationClose} />
@@ -56,13 +54,13 @@ const Blog = () => {
                     <div className="blog__wrapper__header">
                         <p className="blog__wrapper__header__text">Welcome to my madness</p>
                     </div>
+                    <div className="blog__wrapper__posts">
                     {!posts.length ? <p>Posts missing</p> : (
-                        <div className="blog__wrapper__posts">
-                        {posts.map((post, key) => (
+                        posts.map((post, key) => (
                             <BlogPost post={post} key={key} />
-                        ))}
-                        </div>
+                        ))
                     )}
+                    </div>
                     <div className="blog__wrapper__scroll-up" onClick={scrollTop} style={(isScrollUp) ? {opacity: 1, visibility: "visible"} : null}>
                         <FaArrowUp style={arrowUpStyle}/>
                         <p className="blog__wrapper__scroll-up__text">scroll up</p>
