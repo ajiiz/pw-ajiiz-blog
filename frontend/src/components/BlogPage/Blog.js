@@ -17,9 +17,9 @@ const Blog = () => {
 
     /* ANIMATION START */
     useEffect(() => {
-        gsap.to(container.children[1].children[0],  {delay: 1, duration: .8, opacity: 1, y: 0, ease: Power1.easeInOut})
-        gsap.to(container.children[1].children[1],{delay: 1.6, duration: .5, opacity: 1, stagger: 0.5, ease: Power1.easeInOut})
-        gsap.to(container.children[1].children[1].children,{delay: 1.6, duration: .5, opacity: 1, y: 0, stagger: 0.5, ease: Power1.easeInOut})
+        gsap.to(container.children[1].children[0],  {delay: 2, duration: .8, opacity: 1, y: 0, ease: Power1.easeInOut})
+        gsap.to(container.children[1].children[1],{delay: 2.6, duration: .5, opacity: 1, stagger: 0.5, ease: Power1.easeInOut})
+        gsap.to(container.children[1].children[1].children,{delay: 2.6, duration: .5, opacity: 1, y: 0, stagger: 0.5, ease: Power1.easeInOut})
         container.addEventListener('scroll', checkTop);
         return () => window.removeEventListener('scroll', checkTop);
     }, [])
@@ -54,7 +54,7 @@ const Blog = () => {
                         <p className="blog__wrapper__header__text">Welcome to my madness</p>
                     </div>
                     <div className="blog__wrapper__posts">
-                    {!posts.length ? <p>Posts missing</p> : (
+                    {!posts.length ? null : (
                         posts.map((post, key) => (
                             <BlogPost post={post} key={key} />
                         ))
