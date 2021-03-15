@@ -3,6 +3,7 @@ import { useSelector } from "react-redux"
 import { Power1, gsap } from "gsap"
 import Navbar from "../Navbar/Navbar"
 import BlogPost from"./BlogPost"
+import LoadingSpinner from "./LoadingSpinner"
 
 import BannerDark from "../../assets/banner-dark.svg"
 import { FaArrowUp } from "react-icons/fa";
@@ -54,7 +55,7 @@ const Blog = () => {
                         <p className="blog__wrapper__header__text">Welcome to my madness</p>
                     </div>
                     <div className="blog__wrapper__posts">
-                    {!posts.length ? <p>There will be loading component</p> : (
+                    {!posts.length ? <LoadingSpinner /> : (
                         posts.map((post, key) => (
                             <BlogPost post={post} key={key} />
                         ))
