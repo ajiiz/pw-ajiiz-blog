@@ -2,9 +2,7 @@ import React from 'react'
 
 const LoadingSpinner = () => {
     return (
-        <div>
-
-        </div>
+        <div className="lds-dual-ring"></div>
     )
 }
 
