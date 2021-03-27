@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react"
 import { useHistory } from "react-router-dom"
 import { useDispatch } from 'react-redux';
 import { Power1, gsap } from "gsap"
+
 import Navbar from "../Navbar/Navbar"
 
 import BannerDark from "../../assets/banner-dark.svg"
@@ -27,9 +28,7 @@ const Login = () => {
         gsap.to(container.children[1].children[1].children, {delay: 1.2, duration: .5, opacity: 1, y: 0, stagger: 0.3, ease: Power1.easeInOut})
     }, [])
 
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name] : e.target.value })
-    }
+    const handleChange = (e) => setFormData({ ...formData, [e.target.name] : e.target.value })
 
     const handleSubmit = (e) => {
         e.preventDefault()
