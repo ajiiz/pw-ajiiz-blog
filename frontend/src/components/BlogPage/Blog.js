@@ -45,6 +45,7 @@ const Blog = () => {
     const checkTop = () => {
         if (document.body.children[1].children[2].scrollTop > 450) setIsScrollUp(true)
     }
+
     return (
         <>
             <Navbar handleAnimationClose={handleAnimationClose} />
