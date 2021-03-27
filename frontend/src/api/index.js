@@ -1,8 +1,10 @@
 import axios from "axios"
 
-const url = "http://localhost:5000/posts"
+//const url = "http://localhost:5000"
 
-export const fetchPosts = () => axios.get(url)
-export const createPost = (newPost) => axios.post(url, newPost)
+const API = axios.create({ baseURL: 'http://localhost:5000' }) //later zeet app
 
-export const signIn = (formData) => axios.post('/user/signin', formData)
+export const fetchPosts = () => API.get('/posts')
+export const createPost = (newPost) => axios.post('/posts', newPost)
+
+export const signIn = (formData) => API.post('/user/signin', formData)
