@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react"
+import { useHistory } from "react-router-dom"
 import { Power1, gsap } from "gsap"
 import Navbar from "../Navbar/Navbar"
 
@@ -8,6 +9,7 @@ import "../../styles/login.scss"
 const Login = () => {
 
     const [formData, setFormData] = useState({ username: "", password: ""})
+    const history = useHistory()
 
     let container = useRef(null)
 
