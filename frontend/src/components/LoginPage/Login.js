@@ -7,8 +7,7 @@ import "../../styles/login.scss"
 
 const Login = () => {
 
-    const [username, setUsername] = useState("")
-    const [password, setPassword] = useState("")
+    const [formData, setFormData] = useState({ username: "", password: ""})
 
     let container = useRef(null)
 
@@ -23,6 +22,10 @@ const Login = () => {
         gsap.to(container.children[1].children[0], {delay: .7, duration: .6, opacity: 1, y: 0, ease: Power1.easeInOut})
         gsap.to(container.children[1].children[1].children, {delay: 1.2, duration: .5, opacity: 1, y: 0, stagger: 0.3, ease: Power1.easeInOut})
     }, [])
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name] : e.target.value })
+    }
 
     return (
         <>
@@ -40,8 +43,8 @@ const Login = () => {
                             type="text"
                             placeholder="username"
                             name="username"
-                            value={username}
-                            onChange={e => setUsername(e.target.value)}
+                            value={formData.username}
+                            onChange={handleChange}
                         />
                         <p className="login__wrapper__form__name">
                             Password
@@ -51,8 +54,8 @@ const Login = () => {
                             type="password"
                             placeholder="password"
                             name="password"
-                            value={password}
-                            onChange={e => setPassword(e.target.value)}
+                            value={formData.password}
+                            onChange={handleChange}
                         />
                         <input
                             className="input-submit login__wrapper__form__submit"
