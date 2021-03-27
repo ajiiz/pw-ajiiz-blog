@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react"
 import { useHistory } from "react-router-dom"
 import { useDispatch } from 'react-redux';
 import { Power1, gsap } from "gsap"
-
+import { signin } from "../../actions/auth"
 import Navbar from "../Navbar/Navbar"
 
 import BannerDark from "../../assets/banner-dark.svg"
