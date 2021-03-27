@@ -12,7 +12,7 @@ import "../../styles/blog.scss"
 const Blog = () => {
 
     const [isScrollUp, setIsScrollUp] = useState(false)
-    const posts = useSelector((state) => state.posts.reverse())
+    const posts = useSelector((state) => state.posts)
 
     let container = useRef(null)
 
