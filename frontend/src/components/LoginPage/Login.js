@@ -29,6 +29,11 @@ const Login = () => {
         setFormData({ ...formData, [e.target.name] : e.target.value })
     }
 
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
+    }
+
     return (
         <>
             <Navbar handleAnimationClose={handleAnimationClose} />
@@ -36,7 +41,7 @@ const Login = () => {
                 <div className="banner"><img src={BannerDark} alt="banner"></img></div>
                 <div className="login__wrapper">
                     <p className="login__wrapper__header">Thats a secrect area</p>
-                    <form className="login__wrapper__form">
+                    <form className="login__wrapper__form" onSubmit={handleSubmit}>
                         <p className="login__wrapper__form__name">
                             Username
                         </p>
