@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react"
 import { useHistory } from "react-router-dom"
+import { useDispatch } from 'react-redux';
 import { Power1, gsap } from "gsap"
 import Navbar from "../Navbar/Navbar"
 
@@ -10,6 +11,7 @@ const Login = () => {
 
     const [formData, setFormData] = useState({ username: "", password: ""})
     const history = useHistory()
+    const dispatch = useDispatch()
 
     let container = useRef(null)
 
@@ -31,7 +33,7 @@ const Login = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-
+        dispatch(signin(formData, history))
     }
 
     return (
