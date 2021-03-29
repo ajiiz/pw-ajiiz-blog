@@ -17,6 +17,6 @@ export const signin = async (req, res) => {
         res.status(200).json({ result: existingUser, token });
 
       } catch (e) {
-        res.status(500).json({ message: "Something went wrong" + e })
+        res.status(500).json({ message: "Something went wrong. " + e })
       }
   };
