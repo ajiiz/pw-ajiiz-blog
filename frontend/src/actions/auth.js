@@ -10,3 +10,12 @@ export const signin = (formData, router) => async (dispatch) => {
     console.log(e)
   }
 }
+
+export const logout = () => async (dispatch) => {
+  try {
+    dispatch({ type: "LOGOUT"})
+    router.push('/login')
+  } catch (e) {
+    console.log(e)
+  }
+}
