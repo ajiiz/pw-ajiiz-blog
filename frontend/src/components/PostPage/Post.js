@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react"
+import { useHistory } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { createPost } from "../../actions/posts"
 import FileBase from "react-file-base64"
@@ -12,6 +13,8 @@ const Post = () => {
 
     const [postData, setPostData] = useState({ title: "", content: "", selectedFile: ""})
     const dispatch = useDispatch()
+    const history = useHistory()
+
 
     let container = useRef(null)
 
