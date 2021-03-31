@@ -8,6 +8,7 @@ import Navbar from "../Navbar/Navbar"
 
 import BannerDark from "../../assets/banner-dark.svg"
 import "../../styles/post.scss"
+import { logout } from "../../actions/auth"
 
 const Post = () => {
 
@@ -43,6 +44,12 @@ const Post = () => {
         e.preventDefault()
         dispatch(createPost(postData))
         clearPostData()
+    }
+
+    const handleLogout = async (e) => {
+        e.preventDefault()
+        clearPostData()
+        dispatch(logout(history))
     }
 
     return (
