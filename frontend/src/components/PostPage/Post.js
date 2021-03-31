@@ -14,7 +14,7 @@ const Post = () => {
     const [postData, setPostData] = useState({ title: "", content: "", selectedFile: ""})
     const dispatch = useDispatch()
     const history = useHistory()
-
+    const user = JSON.parse(localStorage.getItem('profile'))
 
     let container = useRef(null)
 
@@ -25,6 +25,11 @@ const Post = () => {
     }
 
     useEffect(() => {
+
+        if (user === null) {
+            history.push("/login")
+        }
+
         gsap.to(container.children[1], {delay: .4, duration: .6, opacity: 1, ease: Power1.easeInOut})
         gsap.to(container.children[1].children[0], {delay: .7, duration: .6, opacity: 1, y: 0, ease: Power1.easeInOut})
         gsap.to(container.children[1].children[1].children, {delay: 1.2, duration: .5, opacity: 1, y: 0, stagger: 0.3, ease: Power1.easeInOut})
