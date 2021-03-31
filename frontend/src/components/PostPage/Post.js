@@ -96,6 +96,7 @@ const Post = () => {
                             value="post"
                         />
                     </form>
+                    <button onClick={handleLogout}>logout</button>
                 </div>
                 <div className="banner"><img src={BannerDark} alt="banner"></img></div>
             </div>
