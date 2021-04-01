@@ -37,6 +37,18 @@ const Post = () => {
         gsap.to(container.children[1].children[1].children, {delay: 1.2, duration: .5, opacity: 1, y: 0, stagger: 0.3, ease: Power1.easeInOut})
     }, [])
 
+    const checkPostData = () => {
+
+        if (postData.title.length < 5) setPostError({ ...postError, titleError: true})
+
+        if (postData.content.length < 15) setPostError({ ...postError, contentError: true})
+
+        if (postData.selectedFile === "") setPostError({ ...postError, selectedFileError: true})
+
+        if (postError.titleError || postError.contentError || postError.selectedFileError) return false
+        else return true
+    }
+
     const clearPostData = () => {
         setPostData({ title: "", content: "", selectedFile: "" })
     }
