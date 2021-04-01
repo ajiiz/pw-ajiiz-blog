@@ -13,9 +13,9 @@ import { logout } from "../../actions/auth"
 const Post = () => {
 
     const [postData, setPostData] = useState({ title: "", content: "", selectedFile: ""})
-    const [validTitle, setValidTitle] = useState(false)
-    const [validContent, setValidContent] = useState(false)
-    const [validSelectedFile, setValidSelectedFile] = useState(false)
+    const [validTitle, setValidTitle] = useState(true)
+    const [validContent, setValidContent] = useState(true)
+    const [validSelectedFile, setValidSelectedFile] = useState(true)
     const dispatch = useDispatch()
     const history = useHistory()
     const user = JSON.parse(localStorage.getItem('profile'))
@@ -84,6 +84,7 @@ const Post = () => {
                         </p>
                         <input
                             className="input-text post__wrapper__form__input"
+                            style={!validTitle ? {borderColor: "red"} : {borderColor: "inherit"}}
                             type="text"
                             placeholder="username"
                             name="title"
@@ -95,6 +96,7 @@ const Post = () => {
                         </p>
                         <textarea
                             className="input-text post__wrapper__form__input post__wrapper__form__input--textarea"
+                            style={!validContent ? {borderColor: "red"} : {borderColor: "inherit"}}
                             placeholder="content"
                             value={postData.content}
                             onChange={(e) => setPostData({ ...postData, content: e.target.value })}
@@ -102,7 +104,7 @@ const Post = () => {
                         <p className="post__wrapper__form__name">
                             Image
                         </p>
-                        <div className="post__wrapper__form__image">
+                        <div className="post__wrapper__form__image" style={!validSelectedFile ? {borderColor: "red"} : {borderColor: "inherit"}}>
                             <FileBase
                                 type="file"
                                 multiple={false}
