@@ -23,7 +23,6 @@ const Post = () => {
         gsap.to(container.children[1].children[1].children, {duration: .5, opacity: 0, y: "-30", stagger: 0.2, ease: Power1.easeInOut})
         gsap.to(container.children[1].children[0], {delay: 1, duration: .6, opacity: 0, y: "-30", ease: Power1.easeInOut})
         gsap.to(container, {delay: 1.3, duration: .4, opacity: 0, ease: Power1.easeInOut})
-
     }
 
     useEffect(() => {
@@ -35,7 +34,6 @@ const Post = () => {
         gsap.to(container.children[1], {delay: .4, duration: .6, opacity: 1, ease: Power1.easeInOut})
         gsap.to(container.children[1].children[0], {delay: .7, duration: .6, opacity: 1, y: 0, ease: Power1.easeInOut})
         gsap.to(container.children[1].children[1].children, {delay: 1.2, duration: .5, opacity: 1, y: 0, stagger: 0.3, ease: Power1.easeInOut})
-        gsap.to(container.children[1].children[2], {delay: 3.3, duration: .5, opacity: 1, y: 0, ease: Power1.easeInOut})
     }, [])
 
     const clearPostData = () => {
@@ -97,8 +95,8 @@ const Post = () => {
                             type="submit"
                             value="post"
                         />
+                        <button className="input-submit post__wrapper__form__submit" onClick={handleLogout}>logout</button>
                     </form>
-                    <button className="input-submit post__wrapper__form__submit" onClick={handleLogout}>logout</button>
                 </div>
                 <div className="banner"><img src={BannerDark} alt="banner"></img></div>
             </div>
