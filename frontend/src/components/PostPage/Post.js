@@ -41,7 +41,14 @@ const Post = () => {
 
     const checkPostData = () => {
 
+        if (postData.title.length <= 1) setValidTitle(false)
+        else setValidTitle(true)
 
+        if (postData.content.length < 10) setValidContent(false)
+        else setValidContent(true)
+
+        if (postData.selectedFile === "") setValidSelectedFile(false)
+        else setValidSelectedFile(true)
 
     }
 
