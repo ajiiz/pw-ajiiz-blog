@@ -55,8 +55,10 @@ const Post = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        dispatch(createPost(postData))
-        clearPostData()
+        if (!checkPostData()) {
+            dispatch(createPost(postData))
+            clearPostData()
+        }
     }
 
     const handleLogout = async (e) => {
