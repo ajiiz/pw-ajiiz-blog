@@ -13,6 +13,7 @@ import { logout } from "../../actions/auth"
 const Post = () => {
 
     const [postData, setPostData] = useState({ title: "", content: "", selectedFile: ""})
+    const [postError, setPostError] = useState({ titleError: false, contentError: false, selectedFileError: false })
     const dispatch = useDispatch()
     const history = useHistory()
     const user = JSON.parse(localStorage.getItem('profile'))
