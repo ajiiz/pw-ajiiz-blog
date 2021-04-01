@@ -34,6 +34,7 @@ const Post = () => {
         gsap.to(container.children[1], {delay: .4, duration: .6, opacity: 1, ease: Power1.easeInOut})
         gsap.to(container.children[1].children[0], {delay: .7, duration: .6, opacity: 1, y: 0, ease: Power1.easeInOut})
         gsap.to(container.children[1].children[1].children, {delay: 1.2, duration: .5, opacity: 1, y: 0, stagger: 0.3, ease: Power1.easeInOut})
+
     }, [])
 
     const clearPostData = () => {
@@ -96,7 +97,7 @@ const Post = () => {
                             value="post"
                         />
                     </form>
-                    <button onClick={handleLogout}>logout</button>
+                    <button className="input-submit post__wrapper__form__submit" onClick={handleLogout}>logout</button>
                 </div>
                 <div className="banner"><img src={BannerDark} alt="banner"></img></div>
             </div>
