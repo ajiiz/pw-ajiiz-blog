@@ -39,8 +39,7 @@ const Post = () => {
         gsap.to(container.children[1].children[1].children, {delay: 1.2, duration: .5, opacity: 1, y: 0, stagger: 0.3, ease: Power1.easeInOut})
     }, [])
 
-    const checkPostData = () => {
-
+    useEffect(() => {
         if (postData.title.length <= 1) setValidTitle(false)
         else setValidTitle(true)
 
@@ -49,8 +48,7 @@ const Post = () => {
 
         if (postData.selectedFile === "") setValidSelectedFile(false)
         else setValidSelectedFile(true)
-
-    }
+    },[postData])
 
     const clearPostData = () => {
         setPostData({ title: "", content: "", selectedFile: "" })
@@ -58,7 +56,6 @@ const Post = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        checkPostData()
         if (validTitle && validContent && validSelectedFile) {
             dispatch(createPost(postData))
             clearPostData()
