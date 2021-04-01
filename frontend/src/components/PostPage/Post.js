@@ -13,7 +13,9 @@ import { logout } from "../../actions/auth"
 const Post = () => {
 
     const [postData, setPostData] = useState({ title: "", content: "", selectedFile: ""})
-    const [postError, setPostError] = useState({ titleError: false, contentError: false, selectedFileError: false })
+    const [validTitle, setValidTitle] = useState(false)
+    const [validContent, setValidContent] = useState(false)
+    const [validSelectedFile, setValidSelectedFile] = useState(false)
     const dispatch = useDispatch()
     const history = useHistory()
     const user = JSON.parse(localStorage.getItem('profile'))
@@ -39,14 +41,8 @@ const Post = () => {
 
     const checkPostData = () => {
 
-        if (postData.title.length < 5) setPostError({ ...postError, titleError: true})
 
-        if (postData.content.length < 15) setPostError({ ...postError, contentError: true})
 
-        if (postData.selectedFile === "") setPostError({ ...postError, selectedFileError: true})
-
-        if (postError.titleError || postError.contentError || postError.selectedFileError) return false
-        else return true
     }
 
     const clearPostData = () => {
@@ -55,7 +51,8 @@ const Post = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        if (!checkPostData()) {
+        checkPostData()
+        if (validTitle && validContent && validSelectedFile) {
             dispatch(createPost(postData))
             clearPostData()
         }
