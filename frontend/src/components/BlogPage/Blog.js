@@ -46,6 +46,10 @@ const Blog = () => {
         if (document.body.children[1].children[2].scrollTop > 450) setIsScrollUp(true)
     }
 
+    const moveToPost = () => {
+
+    }
+
     return (
         <>
             <Navbar handleAnimationClose={handleAnimationClose} />
@@ -53,7 +57,7 @@ const Blog = () => {
                 <div className="banner"><img src={BannerDark} alt="banner"></img></div>
                 <div className="blog__wrapper">
                     <div className="blog__wrapper__header">
-                        <p className="blog__wrapper__header__text">Welcome to my madness</p>
+                        <p className="blog__wrapper__header__text">Welcome to my madne<span onClick={moveToPost}>s</span>s</p>
                     </div>
                     <div className="blog__wrapper__posts">
                     {!posts.length ? <LoadingSpinner /> : (
