@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef }  from "react"
 import { useSelector } from "react-redux"
+import { useHistory } from "react-router-dom"
 import { Power1, gsap } from "gsap"
 import Navbar from "../Navbar/Navbar"
 import BlogPost from"./BlogPost"
@@ -13,6 +14,7 @@ const Blog = () => {
 
     const [isScrollUp, setIsScrollUp] = useState(false)
     const posts = useSelector((state) => state.posts)
+    const history = useHistory()
 
     let container = useRef(null)
 
