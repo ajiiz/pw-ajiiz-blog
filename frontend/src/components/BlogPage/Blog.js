@@ -49,7 +49,8 @@ const Blog = () => {
     }
 
     const moveToPost = () => {
-
+        handleAnimationClose()
+        setTimeout(() => history.push("/post"), 3000)
     }
 
     return (
