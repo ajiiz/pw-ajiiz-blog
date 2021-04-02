@@ -1,10 +1,10 @@
-import * as api from '../api/index.js'
+import * as api from "../api/index.js"
 
 export const signin = (formData, router) => async (dispatch) => {
   try {
     const { data } = await api.signIn(formData)
     dispatch({ type: "AUTH", payload: data })
-    router.push('/post')
+    router.push("/post")
 
   } catch (e) {
     console.log(e)
@@ -14,7 +14,7 @@ export const signin = (formData, router) => async (dispatch) => {
 export const logout = (router) => async (dispatch) => {
   try {
     dispatch({ type: "LOGOUT"})
-    router.push('/login')
+    router.push("/login")
   } catch (e) {
     console.log(e)
   }

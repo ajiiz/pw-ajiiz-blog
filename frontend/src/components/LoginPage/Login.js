@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from "react"
 import { useHistory } from "react-router-dom"
-import { useDispatch } from 'react-redux';
+import { useDispatch } from "react-redux"
 import { Power1, gsap } from "gsap"
 import { signin } from "../../actions/auth"
 import Navbar from "../Navbar/Navbar"
 
 import BannerDark from "../../assets/banner-dark.svg"
+
 import "../../styles/login.scss"
 
 const Login = () => {
@@ -24,8 +25,8 @@ const Login = () => {
 
     useEffect(() => {
 
-        if (JSON.parse(localStorage.getItem('profile'))) {
-            history.push('/post')
+        if (JSON.parse(localStorage.getItem("profile"))) {
+            history.push("/post")
         }
 
         gsap.to(container.children[1], {delay: .4, duration: .6, opacity: 1, ease: Power1.easeInOut})

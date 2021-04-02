@@ -9,6 +9,7 @@ import FacebookIcon from "../../assets/facebook-icon.svg"
 import GithubIcon from "../../assets/github-icon.svg"
 import InstagramIcon from "../../assets/instagram-icon.svg"
 import LinkedInIcon from "../../assets/linkedin-icon.svg"
+
 import "../../styles/home.scss"
 
 const Home = () => {

@@ -3,6 +3,7 @@ import { Power1, gsap } from "gsap"
 
 import BannerLight from "../../assets/banner-light.svg"
 import BannerDark from "../../assets/banner-dark.svg"
+
 import "../../styles/loading.scss"
 
 const Loading = ({ handleAnimationStart }) => {

@@ -2,13 +2,15 @@ import React, { useEffect, useState, useRef } from "react"
 import { useHistory } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { createPost } from "../../actions/posts"
-import FileBase from "react-file-base64"
 import { Power1, gsap } from "gsap"
+import { logout } from "../../actions/auth"
+import FileBase from "react-file-base64"
 import Navbar from "../Navbar/Navbar"
 
 import BannerDark from "../../assets/banner-dark.svg"
+
 import "../../styles/post.scss"
-import { logout } from "../../actions/auth"
+
 
 const Post = () => {
 
@@ -18,7 +20,7 @@ const Post = () => {
     const [validSelectedFile, setValidSelectedFile] = useState(true)
     const dispatch = useDispatch()
     const history = useHistory()
-    const user = JSON.parse(localStorage.getItem('profile'))
+    const user = JSON.parse(localStorage.getItem("profile"))
 
     let container = useRef(null)
 
