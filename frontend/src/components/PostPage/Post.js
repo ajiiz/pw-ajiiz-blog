@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux"
 import { createPost } from "../../actions/posts"
 import { Power1, gsap } from "gsap"
 import { logout } from "../../actions/auth"
+import decode from 'jwt-decode';
 import FileBase from "react-file-base64"
 import Navbar from "../Navbar/Navbar"
 
@@ -34,6 +35,12 @@ const Post = () => {
 
         if (user === null) {
             history.push("/login")
+        }
+
+        const token = user?.token
+        if (token) {
+            const decodedToken = decode(token)
+            if (decodedToken.exp * 1000 < new Date().getTime()) handleLogout()
         }
 
         gsap.to(container.children[1], {delay: .4, duration: .6, opacity: 1, ease: Power1.easeInOut})
