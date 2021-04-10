@@ -1,6 +1,6 @@
 import React from "react"
+import styled from "styled-components"
 import useMousePosition from "../../hooks/useMousePosition"
-import styled from 'styled-components'
 
 const Cursor = styled.div.attrs(props => ({
     style: {

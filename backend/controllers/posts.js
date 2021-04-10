@@ -16,6 +16,10 @@ export const createPost = async (req, res) => {
     const { title, content, selectedFile } = req.body;
     const newPostMessage = new PostMessage({ title, content, selectedFile })
 
+    if (!req.userId) {
+        return res.json({ message: "Unauthenticated" })
+    }
+
     try {
         await newPostMessage.save()
         res.status(201).json(newPostMessage)

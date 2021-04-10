@@ -1,17 +1,26 @@
 import React, { useEffect, useState, useRef } from "react"
+import { useHistory } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { createPost } from "../../actions/posts"
-import FileBase from "react-file-base64"
 import { Power1, gsap } from "gsap"
+import { logout } from "../../actions/auth"
+import FileBase from "react-file-base64"
 import Navbar from "../Navbar/Navbar"
 
 import BannerDark from "../../assets/banner-dark.svg"
+
 import "../../styles/post.scss"
+
 
 const Post = () => {
 
     const [postData, setPostData] = useState({ title: "", content: "", selectedFile: ""})
+    const [validTitle, setValidTitle] = useState(true)
+    const [validContent, setValidContent] = useState(true)
+    const [validSelectedFile, setValidSelectedFile] = useState(true)
     const dispatch = useDispatch()
+    const history = useHistory()
+    const user = JSON.parse(localStorage.getItem("profile"))
 
     let container = useRef(null)
 
@@ -22,10 +31,26 @@ const Post = () => {
     }
 
     useEffect(() => {
+
+        if (user === null) {
+            history.push("/login")
+        }
+
         gsap.to(container.children[1], {delay: .4, duration: .6, opacity: 1, ease: Power1.easeInOut})
         gsap.to(container.children[1].children[0], {delay: .7, duration: .6, opacity: 1, y: 0, ease: Power1.easeInOut})
         gsap.to(container.children[1].children[1].children, {delay: 1.2, duration: .5, opacity: 1, y: 0, stagger: 0.3, ease: Power1.easeInOut})
     }, [])
+
+    useEffect(() => {
+        if (postData.title.length <= 1) setValidTitle(false)
+        else setValidTitle(true)
+
+        if (postData.content.length < 10) setValidContent(false)
+        else setValidContent(true)
+
+        if (postData.selectedFile === "") setValidSelectedFile(false)
+        else setValidSelectedFile(true)
+    },[postData])
 
     const clearPostData = () => {
         setPostData({ title: "", content: "", selectedFile: "" })
@@ -33,8 +58,16 @@ const Post = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        dispatch(createPost(postData))
+        if (validTitle && validContent && validSelectedFile) {
+            dispatch(createPost(postData))
+            clearPostData()
+        }
+    }
+
+    const handleLogout = async (e) => {
+        e.preventDefault()
         clearPostData()
+        dispatch(logout(history))
     }
 
     return (
@@ -50,6 +83,7 @@ const Post = () => {
                         </p>
                         <input
                             className="input-text post__wrapper__form__input"
+                            style={!validTitle ? {borderColor: "red"} : {borderColor: "inherit"}}
                             type="text"
                             placeholder="username"
                             name="title"
@@ -61,6 +95,7 @@ const Post = () => {
                         </p>
                         <textarea
                             className="input-text post__wrapper__form__input post__wrapper__form__input--textarea"
+                            style={!validContent ? {borderColor: "red"} : {borderColor: "inherit"}}
                             placeholder="content"
                             value={postData.content}
                             onChange={(e) => setPostData({ ...postData, content: e.target.value })}
@@ -68,7 +103,7 @@ const Post = () => {
                         <p className="post__wrapper__form__name">
                             Image
                         </p>
-                        <div className="post__wrapper__form__image">
+                        <div className="post__wrapper__form__image" style={!validSelectedFile ? {borderColor: "red"} : {borderColor: "inherit"}}>
                             <FileBase
                                 type="file"
                                 multiple={false}
@@ -80,6 +115,7 @@ const Post = () => {
                             type="submit"
                             value="post"
                         />
+                        <button className="input-submit post__wrapper__form__submit" onClick={handleLogout}>logout</button>
                     </form>
                 </div>
                 <div className="banner"><img src={BannerDark} alt="banner"></img></div>

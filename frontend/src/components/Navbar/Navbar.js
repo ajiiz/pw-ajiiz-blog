@@ -2,6 +2,7 @@ import React from "react"
 import CustomLink from "./CustomLink"
 
 import Logo from "../../assets/logo.png"
+
 import "../../styles/navbar.scss"
 
 const Navbar = ({ handleAnimationClose }) => {

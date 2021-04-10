@@ -1,18 +1,21 @@
 import React, { useState, useEffect, useRef }  from "react"
 import { useSelector } from "react-redux"
+import { useHistory } from "react-router-dom"
 import { Power1, gsap } from "gsap"
 import Navbar from "../Navbar/Navbar"
-import BlogPost from"./BlogPost"
+import BlogPost from "./BlogPost"
 import LoadingSpinner from "./LoadingSpinner"
 
 import BannerDark from "../../assets/banner-dark.svg"
 import { FaArrowUp } from "react-icons/fa";
+
 import "../../styles/blog.scss"
 
 const Blog = () => {
 
     const [isScrollUp, setIsScrollUp] = useState(false)
-    const posts = useSelector((state) => state.posts.reverse())
+    const posts = useSelector((state) => state.posts)
+    const history = useHistory()
 
     let container = useRef(null)
 
@@ -21,8 +24,8 @@ const Blog = () => {
         gsap.to(container.children[1].children[0],  {delay: 2, duration: .8, opacity: 1, y: 0, ease: Power1.easeInOut})
         gsap.to(container.children[1].children[1],{delay: 2.6, duration: .5, opacity: 1, stagger: 0.5, ease: Power1.easeInOut})
         gsap.to(container.children[1].children[1].children,{delay: 2.6, duration: .5, opacity: 1, y: 0, stagger: 0.5, ease: Power1.easeInOut})
-        container.addEventListener('scroll', checkTop);
-        return () => window.removeEventListener('scroll', checkTop);
+        container.addEventListener("scroll", checkTop);
+        return () => window.removeEventListener("scroll", checkTop);
     }, [])
 
     /* ANIMATION CLOSE */
@@ -45,6 +48,12 @@ const Blog = () => {
     const checkTop = () => {
         if (document.body.children[1].children[2].scrollTop > 450) setIsScrollUp(true)
     }
+
+    const moveToPost = () => {
+        handleAnimationClose()
+        setTimeout(() => history.push("/post"), 3000)
+    }
+
     return (
         <>
             <Navbar handleAnimationClose={handleAnimationClose} />
@@ -52,7 +61,7 @@ const Blog = () => {
                 <div className="banner"><img src={BannerDark} alt="banner"></img></div>
                 <div className="blog__wrapper">
                     <div className="blog__wrapper__header">
-                        <p className="blog__wrapper__header__text">Welcome to my madness</p>
+                        <p className="blog__wrapper__header__text">Welcome to my madne<span onClick={moveToPost}>s</span>s</p>
                     </div>
                     <div className="blog__wrapper__posts">
                     {!posts.length ? <LoadingSpinner /> : (
