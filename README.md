@@ -29,6 +29,8 @@
 * GSAP 3
 * SCSS
 * Styled Components
+* Heroku - backend
+* Netlify - frontend
 
 ## Setup
 * Pull the project from the repository
