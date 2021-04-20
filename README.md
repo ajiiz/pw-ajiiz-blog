@@ -5,8 +5,9 @@
 ## Table of contents
 * [Status](#status)
 * [Technologies](#technologies)
-* [Rooutes](#routes)
+* [Routes](#routes)
 * [Setup](#setup)
+* [Gallery](#gallery)
 * [License](#license)
 * [Contact](#contact)
 
@@ -40,7 +41,9 @@
 ```
 git clone https://github.com/ajiiz/pw-ajiiz
 ```
-
+## Gallery
+  ![Loading Screen](https://github.com/ajiiz/pw-ajiiz/blob/master/photos_showcase/loading_page.png?raw=true)
+  
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
