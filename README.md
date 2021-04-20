@@ -39,7 +39,6 @@
 * Pull the project from the repository
 ```
 git clone https://github.com/ajiiz/pw-ajiiz
-npm install
 ```
 
 ## License
