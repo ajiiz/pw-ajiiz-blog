@@ -71,7 +71,7 @@ const Post = () => {
         }
     }
 
-    const handleLogout = async (e) => {
+    const handleLogout = async () => {
         clearPostData()
         dispatch(logout(history))
     }
