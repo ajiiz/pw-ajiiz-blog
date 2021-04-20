@@ -1,14 +1,11 @@
 # pw.ajiiz - blog app
 
 *pw.ajiiz* is a blog app made in MERN stack.
-* /home - preview of my profile
-* /blog - view blog posts
-* /login - admin login page
-* /post - post page (if you are logged in)
 
 ## Table of contents
 * [Status](#status)
 * [Technologies](#technologies)
+* [Rooutes](#routes)
 * [Setup](#setup)
 * [License](#license)
 * [Contact](#contact)
@@ -31,6 +28,12 @@
 * Styled Components
 * Heroku - backend
 * Netlify - frontend
+
+## Routes
+* /home - preview of my profile
+* /blog - view blog posts
+* /login - admin login page
+* /post - post page (if you are logged in)
 
 ## Setup
 * Pull the project from the repository
