@@ -46,12 +46,16 @@ git clone https://github.com/ajiiz/pw-ajiiz
 
   ![Loading Screen](https://github.com/ajiiz/pw-ajiiz/blob/master/photos_showcase/loading_page.png?raw=true)
 * Home Screen
+
   ![Home Screen](https://github.com/ajiiz/pw-ajiiz/blob/master/photos_showcase/home_page.png?raw=true)
 * Blog Screen
+
   ![Blog Screen](https://github.com/ajiiz/pw-ajiiz/blob/master/photos_showcase/blog_page.png?raw=true)
 * Login Screen
+
   ![Login Screen](https://github.com/ajiiz/pw-ajiiz/blob/master/photos_showcase/login_page.png?raw=true)
 * Post Screen
+
   ![Post Screen](https://github.com/ajiiz/pw-ajiiz/blob/master/photos_showcase/post_page.png?raw=true)
 
 ## License
