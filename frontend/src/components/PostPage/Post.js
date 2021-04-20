@@ -72,7 +72,6 @@ const Post = () => {
     }
 
     const handleLogout = async (e) => {
-        e.preventDefault()
         clearPostData()
         dispatch(logout(history))
     }
@@ -92,7 +91,7 @@ const Post = () => {
                             className="input-text post__wrapper__form__input"
                             style={!validTitle ? {borderColor: "red"} : {borderColor: "inherit"}}
                             type="text"
-                            placeholder="username"
+                            placeholder="title"
                             name="title"
                             value={postData.title}
                             onChange={(e) => setPostData({ ...postData, title: e.target.value })}
