@@ -14,7 +14,7 @@
 * [Contact](#contact)
 
 ## Status
-#### Published live version at: [pw-ajiiz-blog](https://pw-ajiiz-blog.netlify.app/blog)
+#### Published live version at: [pw-ajiiz-blog](https://pw-ajiiz-blog.netlify.app/)
 
 ## Technologies
 #### Project is created with:
