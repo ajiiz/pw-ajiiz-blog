@@ -43,6 +43,7 @@ git clone https://github.com/ajiiz/pw-ajiiz
 ```
 ## Gallery
 * Loading Screen
+
   ![Loading Screen](https://github.com/ajiiz/pw-ajiiz/blob/master/photos_showcase/loading_page.png?raw=true)
 * Home Screen
   ![Home Screen](https://github.com/ajiiz/pw-ajiiz/blob/master/photos_showcase/home_page.png?raw=true)
