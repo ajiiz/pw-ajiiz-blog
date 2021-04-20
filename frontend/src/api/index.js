@@ -1,8 +1,6 @@
 import axios from "axios"
 
-//const url = "http://localhost:5000"
-
-const API = axios.create({ baseURL: "http://localhost:5000" }) //later zeet app
+const API = axios.create({ baseURL: "https://pw-ajiiz-blog.herokuapp.com" }) //http://localhost:5000 for local server
 
 API.interceptors.request.use((req) => {
     if (localStorage.getItem("profile")) {
