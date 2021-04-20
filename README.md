@@ -43,7 +43,10 @@ git clone https://github.com/ajiiz/pw-ajiiz
 ```
 ## Gallery
   ![Loading Screen](https://github.com/ajiiz/pw-ajiiz/blob/master/photos_showcase/loading_page.png?raw=true)
-  
+  ![Home Screen](https://github.com/ajiiz/pw-ajiiz/blob/master/photos_showcase/home_page.png?raw=true)
+  ![Blog Screen](https://github.com/ajiiz/pw-ajiiz/blob/master/photos_showcase/blog_page.png?raw=true)
+  ![Login Screen](https://github.com/ajiiz/pw-ajiiz/blob/master/photos_showcase/login_page.png?raw=true)
+  ![Post Screen](https://github.com/ajiiz/pw-ajiiz/blob/master/photos_showcase/post_page.png?raw=true)
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
