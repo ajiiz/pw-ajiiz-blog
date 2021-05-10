@@ -8,7 +8,6 @@ Posts are fetched from API in blog page.
 * [Status](#status)
 * [Technologies](#technologies)
 * [Routes](#routes)
-* [Setup](#setup)
 * [Gallery](#gallery)
 * [License](#license)
 * [Contact](#contact)
@@ -38,11 +37,6 @@ Posts are fetched from API in blog page.
 * /login - admin login page
 * /post - post page (if you are logged in)
 
-## Setup
-* Pull the project from the repository
-```
-git clone https://github.com/ajiiz/pw-ajiiz
-```
 ## Gallery
 * Loading Screen
 
