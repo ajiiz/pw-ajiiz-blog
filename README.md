@@ -1,5 +1,4 @@
 # pw.ajiiz - blog app
-
 *pw.ajiiz* is a blog app made in MERN stack. 
 Logged in administrator can add posts to MongoDB.
 Posts are fetched from API in blog page.
@@ -13,29 +12,20 @@ Posts are fetched from API in blog page.
 * [Contact](#contact)
 
 ## Status
-#### Published live version at: [pw-ajiiz-blog](https://pw-ajiiz-blog.netlify.app/)
+Published live version at: [pw-ajiiz-blog](https://pw-ajiiz-blog.netlify.app/)
 
 ## Technologies
-#### Project is created with:
-* ReactJS
-* React Hooks
-* React Routes
-* React Redux
-* Express
-* MongoDB
-* JWT
-* Axios
-* GSAP 3
-* SCSS
-* Styled Components
-* Heroku - backend
-* Netlify - frontend
+#### Blog is built using the following technologies:
+* <b>Frontend</b>: React.js, React Hooks, React Routes, React Redux, axios, styled-components, SCSS, GSAP 3
+* <b>Backend</b>: Express, JWT
+* <b>Database</b>: MongoDB
+* <b>Other</b>: Heroku, Netlify
 
 ## Routes
-* /home - preview of my profile
-* /blog - view blog posts
-* /login - admin login page
-* /post - post page (if you are logged in)
+* `/home`
+* `/blog`
+* `/login` - admin login page
+* `/post` - post page (if you are logged in)
 
 ## Gallery
 * Loading Screen
